@@ -1,12 +1,12 @@
 source "https://rubygems.org"
 
-gem "builder", "~> 3.1.4"
+gem "builder", "~> 3.2.2"
 gem "less", "~> 2.2.2"
-gem "middleman", "~> 3.0.6"
-gem "middleman-blog", "~> 3.1.1"
-gem "middleman-minify-html", "~> 3.0.0"
+gem "middleman", "~> 3.1.5"
+gem "middleman-blog", "~> 3.3.0"
+gem "middleman-minify-html", "~> 3.1.1"
 gem "rack-contrib", "~> 1.1.0"
-gem "therubyracer", "~> 0.10.2"
+gem "therubyracer", "~> 0.12.0"
 gem "thin", "~> 1.5.0"
 
 group :development do
