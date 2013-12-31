@@ -17,7 +17,7 @@ title: Blog
 		</div>	<!-- span -->
 		<div class="span7">
 			<h6 class="meta date"><%= article.date.strftime('%b %e %Y') %></h6>
-			<h1><%= article.title %></h1>
+			<h1><a href="<%= article.url %>"><%= article.title %></a></h1>
 			<p><%= article.summary %></p>
 			<a class="read-more" href="<%= article.url %>">read more</a>
 		</div>	<!-- span -->
