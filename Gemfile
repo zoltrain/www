@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "builder", "~> 3.2.2"
-gem "less", "~> 2.2.2"
+gem "less", "~> 2.4.0"
 gem "middleman", "~> 3.1.5"
 gem "middleman-blog", "~> 3.3.0"
 gem "middleman-minify-html", "~> 3.1.1"
