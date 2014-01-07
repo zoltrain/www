@@ -1,0 +1,41 @@
+// slider
+
+#slider {
+	position: relative;
+	
+	.slidesjs-pagination{
+		position: absolute;
+		left: 50%;
+		bottom: 24px;
+		z-index: 2000;
+		margin-bottom: 0;
+		margin-left: -60px;
+
+		.slidesjs-pagination-item{
+			display: inline-block;
+			margin-bottom: 0;
+
+			a{
+				display:inline-block;
+				margin-left: 12px;
+				width: 12px;
+				height: 12px;
+				background-color: rgba(0, 0, 0, .2);
+				@include border-radius(6px);
+				text-indent: -9999px;
+				background-color: red;
+				.animate-background-color;
+
+				&.active{
+					background-color: $white;
+				}
+
+				&:hover{
+					background-color: rgba(0, 0, 0, .8);
+					.animate-background-color;				
+				}
+			}
+		}
+	}	
+
+}

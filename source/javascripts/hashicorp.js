@@ -21,3 +21,54 @@ $(document).ready(function(){
     return false;
   });
 });
+
+
+//slider
+(function ($, global) {
+  var HSHC = global.HSH || {};
+
+  HSHC.Slider = (function () {
+    return {
+
+      ui : null,
+
+      init: function () {
+        var _this = this;
+
+        //cache elements
+        this.ui = {
+          $slider: $('#slider')
+        }
+        
+        this.initSlider();
+      },
+
+      initSlider: function(){
+        this.ui.$slider.slidesjs({
+          width: 940,
+          height: 528,
+          navigation: {
+            effect: "fade"
+          },
+          pagination: {
+            effect: "fade"
+          },
+          effect: {
+            fade: {
+              speed: 400
+            }
+          }
+        });        
+      }
+
+    }
+  }());
+  
+  $( document ).ready(function() {
+    if($('#slider').length > 0){
+      HSHC.Slider.init();
+    }
+  });
+
+}(jQuery, this));
+
