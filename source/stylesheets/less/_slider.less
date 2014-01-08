@@ -41,7 +41,63 @@
 	height: @hero-height;
 
 	#slider {
+		display: none;
 		position: relative;
+
+		&.hero{
+			h1{
+				font-size: 62px;
+				margin-top: 6px;
+				letter-spacing: 12px;	
+				line-height: 70px;
+			}
+		}
+
+		.hero-btn{
+			float: right;
+
+			.button{
+				position: relative;
+				width: auto;
+				font-size: 13px;
+				font-weight: 700;
+				text-transform: uppercase;
+				border-radius: 0px;
+				background-color: black;
+				margin: 0;
+				padding: 4px 32px 4px 18px;
+				.animate-background-color;
+
+				&:hover{
+					background-color: #43d193;
+					.animate-background-color;
+
+					.button-arrow{
+						right: 16px;
+					  	transition: right .2s ease-in-out;
+					    -moz-transition: right .2s ease-in-out;
+					    -webkit-transition: right .2s ease-in-out;
+					    -o-transition: right .2s ease-in-out;						
+					}					
+				}
+
+				.button-arrow{
+					width: 6px;
+					height: 11px;
+					position: absolute;
+					top: 13px;
+					right: 18px;
+					display: inline-block;
+					background: url(/images/arrow-right.png) no-repeat 0 0;
+					background-size: 6px 11px;
+				  	transition: right .2s ease-in-out;
+				    -moz-transition: right .2s ease-in-out;
+				    -webkit-transition: right .2s ease-in-out;
+				    -o-transition: right .2s ease-in-out;											
+				}
+			}
+		}
+
 
 		.slide{
 			height: @hero-height;
@@ -55,15 +111,80 @@
 		    -ms-animation: scale_slide 0.3s ease-out 1;
 		    -o-animation: scale_slide 0.3s ease-out 1;
 		    animation: scale_slide 0.3s ease-out 1;
-	
+
     		&.hashicorp{
-	    		background: url(/images/hero_02.png) no-repeat center bottom;
-	    		background-size: cover;	
+	    		background: url(/images/hashi-hero.jpg) no-repeat center bottom;
+	    		background-size: cover;
+	    		h1{
+	    			span{
+	    				background-color: #48b4fb;	
+	    			}
+	    			
+	    		}	    		
     		}
 
     		&.vagrant{
-    			background: url(/images/vagrant_module_hero.png) no-repeat center bottom;
+    			background: url(/images/hashi-hero-vagrant.jpg) no-repeat center bottom;
+	    		h1{
+	    			span{
+	    				background-color: #48b4fb;	
+	    			}
+	    			
+	    		}	    			
     		}
+
+    		&.packer{
+    			background: url() no-repeat center bottom;
+	    		h1{
+	    			span{
+	    				background-color: #7bc6b1;	
+	    			}
+	    			
+	    		}	     			
+    		}
+
+    		&.serf{
+    			background: url() no-repeat center bottom;
+	    		h1{
+	    			span{
+	    				background-color: #b03c44;	
+	    			}
+	    			
+	    		}	     			
+    		}    		
+
+    		.hero-content{
+    			position: absolute;
+    			bottom: 24px;
+    			right: 24px;
+    			text-align: right;
+
+	    		h1{
+	    			margin-bottom: 6px;
+	    			span{
+	    				display: inline-block;
+	    				font-size: 24px;
+	    				line-height: 36px;
+	    				letter-spacing: 6px;
+	    				text-transform: uppercase;
+	    				text-align: center;	    				
+	    				color: white;
+	    				padding: 4px 18px;
+	    			}
+	    		}
+	    		h2{
+		    		margin-bottom: 6px;
+	    			span{
+	    				display: inline-block;
+		    			font-size: 16px;
+		    			font-weight: 500;
+		    			color: black;
+		    			background-color: white;
+		    			text-align: center;
+		    			padding: 4px 18px;	    				
+	    			}
+	    		}	
+    		} 		
 		}
 
 		.slidesjs-navigation{
@@ -98,11 +219,11 @@
 		
 		.slidesjs-pagination{
 			position: absolute;
-			left: 50%;
+			left: 24px;
 			bottom: 4px;
 			z-index: 2000;
 			margin-bottom: 0;
-			margin-left: -54px;
+			//margin-left: -54px;
 
 			.slidesjs-pagination-item{
 				display: inline-block;

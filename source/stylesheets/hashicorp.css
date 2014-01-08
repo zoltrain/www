@@ -368,7 +368,60 @@ nav li:hover {
   height: 500px;
 }
 .slider-mask #slider {
+  display: none;
   position: relative;
+}
+.slider-mask #slider.hero h1 {
+  font-size: 62px;
+  margin-top: 6px;
+  letter-spacing: 12px;
+  line-height: 70px;
+}
+.slider-mask #slider .hero-btn {
+  float: right;
+}
+.slider-mask #slider .hero-btn .button {
+  position: relative;
+  width: auto;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0px;
+  background-color: black;
+  margin: 0;
+  padding: 4px 32px 4px 18px;
+  transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+}
+.slider-mask #slider .hero-btn .button:hover {
+  background-color: #43d193;
+  transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+}
+.slider-mask #slider .hero-btn .button:hover .button-arrow {
+  right: 16px;
+  transition: right 0.2s ease-in-out;
+  -moz-transition: right 0.2s ease-in-out;
+  -webkit-transition: right 0.2s ease-in-out;
+  -o-transition: right 0.2s ease-in-out;
+}
+.slider-mask #slider .hero-btn .button .button-arrow {
+  width: 6px;
+  height: 11px;
+  position: absolute;
+  top: 13px;
+  right: 18px;
+  display: inline-block;
+  background: url(/images/arrow-right.png) no-repeat 0 0;
+  background-size: 6px 11px;
+  transition: right 0.2s ease-in-out;
+  -moz-transition: right 0.2s ease-in-out;
+  -webkit-transition: right 0.2s ease-in-out;
+  -o-transition: right 0.2s ease-in-out;
 }
 .slider-mask #slider .slide {
   height: 500px;
@@ -384,11 +437,60 @@ nav li:hover {
   animation: scale_slide 0.3s ease-out 1;
 }
 .slider-mask #slider .slide.hashicorp {
-  background: url(/images/hero_02.png) no-repeat center bottom;
+  background: url(/images/hashi-hero.jpg) no-repeat center bottom;
   background-size: cover;
 }
+.slider-mask #slider .slide.hashicorp h1 span {
+  background-color: #48b4fb;
+}
 .slider-mask #slider .slide.vagrant {
-  background: url(/images/vagrant_module_hero.png) no-repeat center bottom;
+  background: url(/images/hashi-hero-vagrant.jpg) no-repeat center bottom;
+}
+.slider-mask #slider .slide.vagrant h1 span {
+  background-color: #48b4fb;
+}
+.slider-mask #slider .slide.packer {
+  background: url() no-repeat center bottom;
+}
+.slider-mask #slider .slide.packer h1 span {
+  background-color: #7bc6b1;
+}
+.slider-mask #slider .slide.serf {
+  background: url() no-repeat center bottom;
+}
+.slider-mask #slider .slide.serf h1 span {
+  background-color: #b03c44;
+}
+.slider-mask #slider .slide .hero-content {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  text-align: right;
+}
+.slider-mask #slider .slide .hero-content h1 {
+  margin-bottom: 6px;
+}
+.slider-mask #slider .slide .hero-content h1 span {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  padding: 4px 18px;
+}
+.slider-mask #slider .slide .hero-content h2 {
+  margin-bottom: 6px;
+}
+.slider-mask #slider .slide .hero-content h2 span {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  background-color: white;
+  text-align: center;
+  padding: 4px 18px;
 }
 .slider-mask #slider .slidesjs-navigation {
   display: none;
@@ -424,11 +526,10 @@ nav li:hover {
 }
 .slider-mask #slider .slidesjs-pagination {
   position: absolute;
-  left: 50%;
+  left: 24px;
   bottom: 4px;
   z-index: 2000;
   margin-bottom: 0;
-  margin-left: -54px;
 }
 .slider-mask #slider .slidesjs-pagination .slidesjs-pagination-item {
   display: inline-block;
@@ -472,11 +573,10 @@ div.align-center {
 .hero {
   padding: 0;
   height: 500px;
-  text-align: center;
-}
-.hero .hero-content {
-  height: 250px;
-  padding-top: 125px;
+  /*.hero-content {
+        height: @hero-content-height;
+        padding-top: (@hero-height - @hero-content-height) / 2;
+    }*/
 }
 .hero h1 {
   font-size: 70px;
