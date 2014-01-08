@@ -66,11 +66,11 @@
         $.data(this, "touch", true);
         this.options.effect.slide.speed = this.options.effect.slide.speed / 2;
       }
-      $element.css({
+      /*$element.css({
         overflow: "hidden"
-      });
+      });*/
       $element.slidesContainer = $element.children().not(".slidesjs-navigation", $element).wrapAll("<div class='slidesjs-container'>", $element).parent().css({
-        overflow: "hidden",
+        //overflow: "hidden",
         position: "relative"
       });
       $(".slidesjs-container", $element).wrapInner("<div class='slidesjs-control'>", $element).children();
@@ -200,6 +200,7 @@
       this.data = $.data(this);
       current = number > -1 ? number : this.data.current;
       $(".active", $element).removeClass("active");
+      console.log(current)
       return $(".slidesjs-pagination li:eq(" + current + ") a", $element).addClass("active");
     };
     Plugin.prototype.update = function() {
@@ -465,7 +466,7 @@
           left: value * this.options.width,
           zIndex: 10
         });
-        this.options.callback.start(currentSlide + 1);
+        this.options.callback.start(currentSlide + 1, this);
         if (this.data.vendorPrefix) {
           prefix = this.data.vendorPrefix;
           transform = prefix + "Transform";
@@ -545,7 +546,7 @@
           left: 0,
           zIndex: 10
         });
-        this.options.callback.start(currentSlide + 1);
+        this.options.callback.start(currentSlide + 1, this);
         if (this.options.effect.fade.crossfade) {
           slidesControl.children(":eq(" + this.data.current + ")").stop().fadeOut(this.options.effect.fade.speed);
           return slidesControl.children(":eq(" + next + ")").stop().fadeIn(this.options.effect.fade.speed, (function() {

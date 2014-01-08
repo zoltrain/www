@@ -37,10 +37,28 @@ $(document).ready(function(){
 
         //cache elements
         this.ui = {
-          $slider: $('#slider')
+          $doc: $(window),
+          $slider: $('#slider'),
+          $pagination: null
         }
         
         this.initSlider();
+        this.addEventListeners();
+
+      },
+
+      addEventListeners: function(){
+        var _this = this;
+
+        _this.ui.$doc.scroll(function() {
+          var top = _this.ui.$doc.scrollTop(),
+              speedAdj = (top*0.6),
+              speedAdjOffset = speedAdj - top;
+
+          _this.ui.$slider.css('webkitTransform', 'translate(0, '+ speedAdj +'px)');
+          _this.ui.$slider.find('.container').css('webkitTransform', 'translate(0, '+  speedAdjOffset +'px)');
+          //_this.ui.$pagination.css('webkitTransform', 'translate(0, '+  speedAdjOffset +'px)');
+        })
       },
 
       initSlider: function(){
@@ -55,10 +73,25 @@ $(document).ready(function(){
           },
           effect: {
             fade: {
-              speed: 400
+              speed: 100,
+              crossfade: false
+            }
+          },
+          callback:{
+            loaded: function(){
+              console.log('slide callback: loaded')
+            },            
+            start: function(num, scope){
+              console.log(num, scope)
+              console.log('slide callback: start')
+            },            
+            complete: function(){
+              console.log('slide callback: complete')
             }
           }
-        });        
+        });
+
+        this.ui.$pagination = $('.slidesjs-pagination');      
       }
 
     }

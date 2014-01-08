@@ -1,41 +1,134 @@
 // slider
 
-#slider {
-	position: relative;
+@keyframes scale_slide {
+    0% {
+        //opacity: 0;
+        transform: scale(1.2);
+    }
+
+    to {
+        //opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes scale_slide {
+    0% {
+        //opacity: 0;
+        -webkit-transform: scale(1.2);
+    }
+
+    to {
+        //opacity: 1;
+        -webkit-transform: scale(1);
+    }
+}
+
+@-moz-keyframes scale_slide {
+    0% {
+        //opacity: 0;
+        -moz-transform: scale(1.2);
+    }
+
+    to {
+        //opacity: 1;
+        -moz-transform: scale(1);
+    }
+}
+
+.slider-mask{
+	overflow: hidden;
+	height: @hero-height;
+
+	#slider {
+		position: relative;
+
+		.slide{
+			height: @hero-height;
+		    -webkit-transition: all 0.2s linear;
+		    -moz-transition: all 0.2s linear;
+		    -ms-transition: all 0.2s linear;
+		    -o-transition: all 0.2s linear;
+		    transition: all 0.2s linear;
+		    -webkit-animation: scale_slide 0.3s ease-out 1;
+		    -moz-animation: scale_slide 0.3s ease-out 1;
+		    -ms-animation: scale_slide 0.3s ease-out 1;
+		    -o-animation: scale_slide 0.3s ease-out 1;
+		    animation: scale_slide 0.3s ease-out 1;
 	
-	.slidesjs-pagination{
-		position: absolute;
-		left: 50%;
-		bottom: 24px;
-		z-index: 2000;
-		margin-bottom: 0;
-		margin-left: -60px;
+    		&.hashicorp{
+	    		background: url(/images/hero_02.png) no-repeat center bottom;
+	    		background-size: cover;	
+    		}
 
-		.slidesjs-pagination-item{
-			display: inline-block;
-			margin-bottom: 0;
+    		&.vagrant{
+    			background: url(/images/vagrant_module_hero.png) no-repeat center bottom;
+    		}
+		}
 
-			a{
-				display:inline-block;
-				margin-left: 12px;
-				width: 12px;
-				height: 12px;
-				background-color: rgba(0, 0, 0, .2);
-				@include border-radius(6px);
-				text-indent: -9999px;
-				background-color: red;
+		.slidesjs-navigation{
+			display: none;
+			position: absolute;
+			top: 50%;
+			margin-top: -40px;
+			width: 58px;
+			height: 80px;		
+			z-index: 2000;
+			background-color: rgba(0, 0, 0, .2);
+			background-image: url('../images/slider-arrows.png');
+			background-repeat: no-repeat;
+			text-indent: -9999px; 
+			white-space: nowrap; 
+			.animate-background-color;
+
+			&.slidesjs-previous{
+				left: 12px;
+				background-position: -58px 0;
+			}
+
+			&.slidesjs-next{
+				right: 12px;
+			}
+
+			&:hover{
+				background-color: rgba(0, 0, 0, .8);
 				.animate-background-color;
-
-				&.active{
-					background-color: $white;
-				}
-
-				&:hover{
-					background-color: rgba(0, 0, 0, .8);
-					.animate-background-color;				
-				}
 			}
 		}
-	}	
+		
+		.slidesjs-pagination{
+			position: absolute;
+			left: 50%;
+			bottom: 4px;
+			z-index: 2000;
+			margin-bottom: 0;
+			margin-left: -54px;
 
+			.slidesjs-pagination-item{
+				display: inline-block;
+				margin-bottom: 0;
+
+				a{
+					display:inline-block;
+					margin-left: 12px;
+					width: 12px;
+					height: 12px;
+					background-color: rgba(0, 0, 0, .2);
+					@include border-radius(6px);
+					text-indent: -9999px;
+					.animate-background-color;
+
+					&.active{
+						background-color: rgba(0, 0, 0, .8);
+					}
+
+					&:hover{
+						background-color: rgba(0, 0, 0, .8);
+						.animate-background-color;				
+					}
+				}
+			}
+		}	
+	}
 }
+

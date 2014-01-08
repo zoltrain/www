@@ -339,39 +339,118 @@ nav li:hover {
   -khtml-border-radius: 50px;
   border-radius: 50px;
 }
-#slider {
+@keyframes scale_slide {
+  0% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes scale_slide {
+  0% {
+    -webkit-transform: scale(1.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes scale_slide {
+  0% {
+    -moz-transform: scale(1.2);
+  }
+  to {
+    -moz-transform: scale(1);
+  }
+}
+.slider-mask {
+  overflow: hidden;
+  height: 500px;
+}
+.slider-mask #slider {
   position: relative;
 }
-#slider .slidesjs-pagination {
+.slider-mask #slider .slide {
+  height: 500px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-animation: scale_slide 0.3s ease-out 1;
+  -moz-animation: scale_slide 0.3s ease-out 1;
+  -ms-animation: scale_slide 0.3s ease-out 1;
+  -o-animation: scale_slide 0.3s ease-out 1;
+  animation: scale_slide 0.3s ease-out 1;
+}
+.slider-mask #slider .slide.hashicorp {
+  background: url(/images/hero_02.png) no-repeat center bottom;
+  background-size: cover;
+}
+.slider-mask #slider .slide.vagrant {
+  background: url(/images/vagrant_module_hero.png) no-repeat center bottom;
+}
+.slider-mask #slider .slidesjs-navigation {
+  display: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  width: 58px;
+  height: 80px;
+  z-index: 2000;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-image: url('../images/slider-arrows.png');
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  white-space: nowrap;
+  transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+}
+.slider-mask #slider .slidesjs-navigation.slidesjs-previous {
+  left: 12px;
+  background-position: -58px 0;
+}
+.slider-mask #slider .slidesjs-navigation.slidesjs-next {
+  right: 12px;
+}
+.slider-mask #slider .slidesjs-navigation:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+}
+.slider-mask #slider .slidesjs-pagination {
   position: absolute;
   left: 50%;
-  bottom: 24px;
+  bottom: 4px;
   z-index: 2000;
   margin-bottom: 0;
-  margin-left: -60px;
+  margin-left: -54px;
 }
-#slider .slidesjs-pagination .slidesjs-pagination-item {
+.slider-mask #slider .slidesjs-pagination .slidesjs-pagination-item {
   display: inline-block;
   margin-bottom: 0;
 }
-#slider .slidesjs-pagination .slidesjs-pagination-item a {
+.slider-mask #slider .slidesjs-pagination .slidesjs-pagination-item a {
   display: inline-block;
   margin-left: 12px;
   width: 12px;
   height: 12px;
   background-color: rgba(0, 0, 0, 0.2);
   text-indent: -9999px;
-  background-color: red;
   transition: background-color 0.2s ease-in-out;
   -moz-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   -o-transition: background-color 0.2s ease-in-out;
 }
 @include border-radius(6px);
-#slider .slidesjs-pagination .slidesjs-pagination-item a.active {
-  background-color: $white;
+.slider-mask #slider .slidesjs-pagination .slidesjs-pagination-item a.active {
+  background-color: rgba(0, 0, 0, 0.8);
 }
-#slider .slidesjs-pagination .slidesjs-pagination-item a:hover {
+.slider-mask #slider .slidesjs-pagination .slidesjs-pagination-item a:hover {
   background-color: rgba(0, 0, 0, 0.8);
   transition: background-color 0.2s ease-in-out;
   -moz-transition: background-color 0.2s ease-in-out;
@@ -394,7 +473,6 @@ div.align-center {
   padding: 0;
   height: 500px;
   text-align: center;
-  background: url(/images/hero_02.png) no-repeat center 0;
 }
 .hero .hero-content {
   height: 250px;
