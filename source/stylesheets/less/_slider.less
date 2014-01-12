@@ -54,9 +54,21 @@
 		}
 
 		.hero-btn{
-			float: right;
 
+			&.green{
+				.button{
+					background-color: #43d193;
+				  	.animate-background-color;
+
+					&:hover{
+						background-color: #38B47E;
+					  	.animate-background-color;
+					}
+				}
+			}	
+					
 			.button{
+				display: inline-block;
 				position: relative;
 				width: auto;
 				font-size: 13px;
@@ -65,7 +77,7 @@
 				border-radius: 0px;
 				background-color: black;
 				margin: 0;
-				padding: 4px 32px 4px 18px;
+				padding: 0px 26px 0px 12px;
 				.animate-background-color;
 
 				&:hover{
@@ -73,7 +85,7 @@
 					.animate-background-color;
 
 					.button-arrow{
-						right: 16px;
+						right: 11px;
 					  	transition: right .2s ease-in-out;
 					    -moz-transition: right .2s ease-in-out;
 					    -webkit-transition: right .2s ease-in-out;
@@ -85,8 +97,8 @@
 					width: 6px;
 					height: 11px;
 					position: absolute;
-					top: 13px;
-					right: 18px;
+					top: 9px;
+					right: 14px;
 					display: inline-block;
 					background: url(/images/arrow-right.png) no-repeat 0 0;
 					background-size: 6px 11px;
@@ -160,28 +172,39 @@
     			text-align: right;
 
 	    		h1{
-	    			margin-bottom: 6px;
+		    		margin-bottom: 6px;
+		    		line-height: 0;
 	    			span{
 	    				display: inline-block;
-	    				font-size: 24px;
+	    				font-size: 28px;
 	    				line-height: 36px;
 	    				letter-spacing: 6px;
 	    				text-transform: uppercase;
 	    				text-align: center;	    				
 	    				color: white;
-	    				padding: 4px 18px;
+	    				padding: 0px 12px;
 	    			}
 	    		}
 	    		h2{
-		    		margin-bottom: 6px;
+		    		margin-bottom: 12px;
+		    		p{
+		    			display: block;
+		    			height: 28px;
+		    			margin-bottom: 0px;
+						text-align: right;
+		    		}
 	    			span{
+		    			margin-bottom: 0px;
 	    				display: inline-block;
-		    			font-size: 16px;
+		    			height: 28px;
+		    			line-height: 28px;
+		    			font-size: 14px;
 		    			font-weight: 500;
 		    			color: black;
-		    			background-color: white;
+		    			background-color: rgba(255,255,255, .8);
+		    			border-bottom: 2px solid white;
 		    			text-align: center;
-		    			padding: 4px 18px;	    				
+		    			padding: 0px 12px;	    				
 	    			}
 	    		}	
     		} 		
