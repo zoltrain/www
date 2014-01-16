@@ -483,26 +483,26 @@ nav li:hover {
   animation: scale_slide 0.3s ease-out 1;
 }
 .slider-mask #slider .slide.hashicorp {
-  background: url(/images/home-hero/hashi-hero-bright-blue.jpg) no-repeat center bottom;
+  background: url(/images/home-hero/hashicorp.jpg) no-repeat center bottom;
   background-size: cover;
 }
 .slider-mask #slider .slide.hashicorp h1 span {
   background-color: #48b4fb;
 }
 .slider-mask #slider .slide.vagrant {
-  background: url(/images/home-hero/hashi-hero-bright.jpg) no-repeat center bottom;
+  background: url(/images/home-hero/vagrant.jpg) no-repeat center bottom;
 }
 .slider-mask #slider .slide.vagrant h1 span {
   background-color: #48b4fb;
 }
 .slider-mask #slider .slide.packer {
-  background: url() no-repeat center bottom;
+  background: url(/images/home-hero/packer.jpg) no-repeat center bottom;
 }
 .slider-mask #slider .slide.packer h1 span {
   background-color: #7bc6b1;
 }
 .slider-mask #slider .slide.serf {
-  background: url() no-repeat center bottom;
+  background: url(/images/home-hero/serf.jpg) no-repeat center bottom;
 }
 .slider-mask #slider .slide.serf h1 span {
   background-color: #b03c44;
