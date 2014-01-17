@@ -75,7 +75,7 @@
 				font-weight: 700;
 				text-transform: uppercase;
 				border-radius: 0px;
-				background-color: black;
+				background-color: #202020;
 				margin: 0;
 				padding: 0px 26px 0px 12px;
 				.animate-background-color;
@@ -128,9 +128,13 @@
     			background: url(/images/home-hero/hashicorp.jpg) no-repeat center bottom;
 	    		background-size: cover;
 	    		h1{
-	    			span{
-	    				background-color: #48b4fb;	
-	    			}
+	    			/*span{
+	    				background-color: #48b4fb;
+
+						&:after {
+						  background: linear-gradient(to right top, #48b4fb 50%, transparent 50%) !important;
+						}	
+	    			}*/
 	    			
 	    		}	    		
     		}
@@ -138,9 +142,13 @@
     		&.vagrant{
     			background: url(/images/home-hero/vagrant.jpg) no-repeat center bottom;
 	    		h1{
-	    			span{
-	    				background-color: #48b4fb;	
-	    			}
+	    			/*span{
+	    				background-color: #48b4fb;
+						
+						&:after {
+						  background: linear-gradient(to right top, #48b4fb 50%, transparent 50%) !important;
+						}		    				
+	    			}*/
 	    			
 	    		}	    			
     		}
@@ -149,7 +157,11 @@
     			background: url(/images/home-hero/packer.jpg) no-repeat center bottom;
 	    		h1{
 	    			span{
-	    				background-color: #7bc6b1;	
+	    				background-color: #43d193 !important;	
+						
+						&:after {
+						  background: linear-gradient(to right top, #3dbf86 50%, transparent 50%) !important;
+						}	
 	    			}
 	    			
 	    		}	     			
@@ -159,7 +171,11 @@
     			background: url(/images/home-hero/serf.jpg) no-repeat center bottom;
 	    		h1{
 	    			span{
-	    				background-color: #b03c44;	
+	    				background-color: #dd4e58 !important;	
+						
+						&:after {
+						  background: linear-gradient(to right top, #c0444c 50%, transparent 50%) !important;
+						}		    				
 	    			}
 	    			
 	    		}	     			
@@ -168,45 +184,58 @@
     		.hero-content{
     			position: absolute;
     			bottom: 24px;
-    			right: 24px;
+    			right: 32px;
     			text-align: right;
 
 	    		h1{
-		    		margin-bottom: 6px;
+		    		margin-bottom: 0px;
+		    		margin-right: 8px;
 		    		line-height: 0;
 	    			span{
+	    				position: relative;
 	    				display: inline-block;
 	    				font-size: 28px;
 	    				line-height: 36px;
 	    				letter-spacing: 6px;
 	    				text-transform: uppercase;
-	    				text-align: center;	    				
-	    				color: white;
-	    				padding: 0px 12px;
+	    				text-align: center;
+	    				background-color: #48b4fb;
+	    				color: #fff;
+	    				padding: 4px 10px 4px 24px;
+
+						&:after {
+						  content: "";
+						  position: absolute;
+						  top: 0;
+						  right: -8px;
+						  width: 8px;
+						  height: 100%;
+						  background: linear-gradient(to right top, #12A1FF 50%, transparent 50%);
+						}	    				
 	    			}
 	    		}
 	    		h2{
-		    		margin-bottom: 12px;
+		    		margin-bottom: 8px;
 		    		p{
 		    			display: block;
 		    			height: 28px;
+		    			font-size: 13px;
+		    			line-height: 24px;
+		    			height: 24px;
 		    			margin-bottom: 0px;
 						text-align: right;
 		    		}
 	    			span{
 		    			margin-bottom: 0px;
 	    				display: inline-block;
-		    			height: 28px;
-		    			line-height: 28px;
-		    			font-size: 14px;
 		    			font-weight: 500;
-		    			color: black;
-		    			background-color: rgba(255,255,255, .8);
-		    			border-bottom: 2px solid white;
+		    			color: #202020;
+		    			background-color: #fff;
 		    			text-align: center;
 		    			padding: 0px 12px;	    				
 	    			}
-	    		}	
+	    		}	    		
+	
     		} 		
 		}
 
