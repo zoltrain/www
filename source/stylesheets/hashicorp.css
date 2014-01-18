@@ -856,47 +856,135 @@ div.align-center {
   padding: 28px 0;
   margin: 0 20px;
 }
-article.blog-post {
+article.blog-post,
+article.support {
   padding: 0px;
   padding-bottom: 60px;
 }
-article.blog-post .blog-image {
+article.blog-post .blog-image,
+article.support .blog-image {
   text-align: center;
 }
-article.blog-post h1 {
+article.blog-post h1,
+article.support h1 {
   font-size: 50px;
   margin-bottom: 20px;
   line-height: 55px;
 }
-article.blog-post img {
+article.blog-post img,
+article.support img {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-article.blog-post img.shadow {
+article.blog-post img.shadow,
+article.support img.shadow {
   box-shadow: 1px 1px 7px #888;
 }
-article.blog-post pre {
+article.blog-post pre,
+article.support pre {
   margin: 40px 0;
 }
-article.blog-post p img {
+article.blog-post p img,
+article.support p img {
   padding: 30px;
 }
 article.blog-post h2,
-article.blog-post h3 {
+article.support h2,
+article.blog-post h3,
+article.support h3 {
   letter-spacing: 1px;
   margin: 20px 0;
 }
-article.blog-post .vimeo {
+article.blog-post .vimeo,
+article.support .vimeo {
   width: 630px;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+article.support .content {
+  padding-top: 50px;
 }
 .gray {
   background-color: #f7f6f1;
 }
 .blue {
   background-color: #1e71a1;
+}
+.page-title {
+  background-color: #f7f6f1;
+}
+.page-title h1 {
+  color: #1276bc;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 50px 0;
+}
+.sidebar {
+  position: relative;
+  padding-top: 50px;
+}
+.sidebar .bg-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 640px;
+  height: 371px;
+  background: #ffffff url(/images/sidebar-grid.jpg) 99% center no-repeat;
+}
+.sidebar .sidebar-nav {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.sidebar .sidebar-nav a {
+  color: #000000;
+}
+.sidebar .sidebar-nav :last-child {
+  border-bottom: none;
+}
+.sidebar .sidebar-nav li {
+  position: relative;
+}
+.sidebar .sidebar-nav li > a:hover {
+  border-right: 4px solid #43d193;
+}
+.sidebar .sidebar-nav li > a:hover,
+.sidebar .sidebar-nav li > a:focus {
+  background-color: transparent !important;
+}
+.sidebar .sidebar-nav > li {
+  color: #43d193;
+  padding: 10px 0;
+  border-bottom: 1px solid #fff;
+}
+.sidebar .sidebar-nav > li.active > a {
+  border-right: 4px solid #43d193;
+}
+.sidebar .sidebar-nav > li.active .nav {
+  display: block;
+}
+.sidebar .sidebar-nav > li.active .nav li.active a {
+  border-right: 4px solid #43d193;
+}
+.sidebar .sidebar-nav > li > a {
+  color: #43d193;
+  padding-right: 40px;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.sidebar .sidebar-nav .nav {
+  margin: 8px 0;
+}
+.sidebar .sidebar-nav .nav > li {
+  margin-left: 12px;
+}
+.sidebar .sidebar-nav .nav > li > a {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 18px;
 }
 body.products .wrapper {
   overflow: hidden;
