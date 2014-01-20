@@ -3,3 +3,4 @@
 /build
 /.sass-cache
 /.vagrant/
+/node_modules/

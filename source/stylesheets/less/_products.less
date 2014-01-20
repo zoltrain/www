@@ -1,0 +1,170 @@
+body.products{
+	.wrapper{
+		overflow: hidden;
+	}
+}
+
+// products landing styles
+article.product-item {
+	height: 500px;
+	padding: 0;
+	background-color: white;
+
+	h1{
+		padding-top: 120px;
+		padding-bottom: 10px;
+	}
+
+	p{
+		line-height: 28px;
+	}
+
+	.product-click{
+		display: inline-block;
+		padding: 8px 20px;
+		margin-top: 30px;
+		color: white;
+		.border-radius(4px);
+		background-color: black;
+	}
+
+	&.gray{
+		background-color: @gray-background;
+	}
+
+	&.vagrant{
+		h1,p{
+			color: @vagrant-blue;
+		}
+
+		.product-click{
+			background-color: @vagrant-light-blue;
+		}
+
+		.product-image{
+			span.image{
+				top: 30px;
+				left: -25px;
+			}
+		}			
+	}
+
+	&.packer{
+		h1,p{
+			color: @packer-green;
+		}
+
+		.product-click{
+			background-color: @packer-light-green;
+		}
+
+		.product-image{
+			span.image{
+				top: -22px;
+				left: -75px;
+				background-position: 0 -500px;
+			}
+		}					
+	}	
+
+	&.serf{
+		h1,p{
+			color: @serf-red;
+		}
+
+		.product-click{
+			background-color: @serf-light-red;
+		}
+
+		.product-image{
+			span.image{
+				top: 34px;
+				left: -25px;
+				background-position: 0 -1000px;
+			}
+		}			
+	}
+
+	.product-image{
+		position: relative;
+		span.image{
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: inline-block;
+			width: 660px;
+			height: 500px;
+			background: url(../images/products-sprite.png) 0 0 no-repeat;
+			background: -webkit-image-set( url(../images/products-sprite.png) 1x, url(../images/products-sprite@2x.png) 2x );
+		}
+	}	
+}
+
+@media (max-width: 979px) {
+	body.products{
+		padding: 0;
+	}
+
+	article.product-item {
+		height: auto;
+		padding: 60px 0;
+		text-align: center;
+
+		h1 {
+			padding-top: 60px;
+		}
+
+		.product-image {
+			height: 250px !important;
+			margin: 0;
+			left: 50% !important;
+			margin-left: -100px;	
+
+			span.image{
+				width: 330px;
+				height: 250px;
+				margin: 0 auto;				
+				background-size: 330px 750px;
+			}
+		}
+
+		.span5, .span6{
+			width: 100%;
+			float: none;
+			left: auto;
+			right: auto;
+		}
+
+		.product-image{
+			height: 500px;
+		}
+
+		&.packer{
+			.product-image{
+				span.image{
+					top: -22px;
+					left: -25px;
+					background-position: 0 -250px;
+				}
+			}					
+		}	
+
+		&.serf{
+			.product-image{
+				span.image{
+					top: 34px;
+					left: -25px;
+					background-position: 0 -500px;
+				}
+			}			
+		}		
+	}
+}
+
+@media (max-width: 480px) {
+	body.products{
+		article.product-item {
+			padding: 60px 20px;
+		}
+	}
+}
