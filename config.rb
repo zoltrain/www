@@ -17,7 +17,10 @@ end
 
 # Build-specific configuration
 configure :build do
-  activate :asset_hash
+  activate :asset_hash, ignore: [
+    "images/products-sprite.png",
+    "images/products-sprite@2x.png",
+  ]
   activate :minify_css
   activate :minify_html
   activate :minify_javascript
