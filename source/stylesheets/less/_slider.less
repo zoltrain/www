@@ -125,8 +125,10 @@
 		    animation: scale_slide 0.3s ease-out 1;
 
     		&.hashicorp{
-    			background: url(/images/home-hero/hashicorp.jpg) no-repeat center bottom;
-	    		background-size: cover;
+    			background-image: url(/images/home-hero/hashicorp.jpg);
+    			//background-repeat: no-repeat;
+    			background-position: center center;
+
 	    		h1{
 	    			/*span{
 	    				background-color: #48b4fb;
@@ -155,6 +157,7 @@
 
     		&.packer{
     			background: url(/images/home-hero/packer.jpg) no-repeat center bottom;
+    			background-color: #e7f7f5;
 	    		h1{
 	    			span{
 	    				background-color: #43d193 !important;
@@ -185,6 +188,7 @@
     			position: absolute;
     			bottom: 24px;
     			right: 32px;
+    			width: 500px;
     			text-align: right;
 
 	    		h1{
@@ -221,7 +225,7 @@
 		    			height: 28px;
 		    			font-size: 13px;
 		    			line-height: 24px;
-		    			height: 24px;
+		    			height: auto;
 		    			margin-bottom: 0px;
 						text-align: right;
 		    		}
@@ -231,7 +235,7 @@
 		    			font-weight: 500;
 		    			color: #202020;
 		    			background-color: #fff;
-		    			text-align: center;
+		    			text-align: right;
 		    			padding: 0px 12px;
 	    			}
 	    		}
