@@ -27,6 +27,28 @@ $(document).ready(function(){
 (function ($, global) {
   var HSHC = global.HSH || {};
 
+  HSHC.Utils =  (function () {
+    return {
+    //check for mobile user agents
+      isMobile : (function(){
+               if( navigator.userAgent.match(/Android/i)
+               || navigator.userAgent.match(/webOS/i)
+               || navigator.userAgent.match(/iPhone/i)
+               //|| navigator.userAgent.match(/iPad/i)
+               || navigator.userAgent.match(/iPod/i)
+               || navigator.userAgent.match(/BlackBerry/i)
+               || navigator.userAgent.match(/Windows Phone/i)
+               ){
+                      return true;
+                }
+               else {
+                  return false;
+                }
+      })() 
+    }
+
+  }());
+
   HSHC.Slider = (function () {
     return {
 
@@ -50,6 +72,11 @@ $(document).ready(function(){
       addEventListeners: function(){
         var _this = this;
 
+        console.log(HSHC.Utils.isMobile);
+
+        if(HSHC.Utils.isMobile)
+          return;
+        
         _this.ui.$doc.scroll(function() {
           var top = _this.ui.$doc.scrollTop(),
               speedAdj = (top*0.6),

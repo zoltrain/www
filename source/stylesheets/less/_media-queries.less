@@ -1,5 +1,56 @@
 @media (max-width: 480px) {
 
+	.slider-mask{
+		//height: @hero-height - 100px;
+		#slider {
+			//height: @hero-height - 100px;
+			.slidesjs-pagination{
+				right: 10px;
+				left: auto;
+				bottom: 8px;
+			}		
+				
+			.slide{
+			    -webkit-transition: none;
+			    -moz-transition: none;
+			    -ms-transition: none;
+			    -o-transition: none;
+			    transition: none;
+			    -webkit-animation: none;
+			    -moz-animation: none;
+			    -ms-animation: none;
+			    -o-animation: none;
+			    animation: none;				
+
+	    		.hero-content{
+	    			right: 0;
+	    			bottom: 50px;
+	    			width: auto;
+
+	    			h1{
+	    				margin-right: 20px;
+	    			}
+
+		    		h2{
+		    			background-color: rgba( 255, 255, 255, .9);
+		    			padding: 0 10px;
+		    			margin: 0px 10px 8px 10px;
+
+		    			span{
+		    				display: inline;
+		    				padding: 0;
+		    				background-color: transparent;
+		    			}
+		    		}
+
+		    		.button{
+		    			margin-right: 10px;
+		    		}    			
+	    		}
+	    	}
+	    }
+	}	
+
 		nav {
 		position: absolute;
 		height: auto;
@@ -104,9 +155,9 @@
 	}
 
 	.hero {
-	height: @hero-height - 100px;
-	background-size: 200%;
-	background-position: bottom center;
+	//height: @hero-height - 100px;
+	//background-size: 200%;
+	//background-position: bottom center;
 
 		.hero-content {
 		padding-top: (@hero-height - @hero-content-height) / 2;
@@ -212,6 +263,19 @@
 
 @media (max-width: 767px) {
 
+
+	body.index {
+	    padding-left: 0px;
+	    padding-right: 0px;
+
+		.article-summaries article,
+		section.product,
+		section.customers {
+		margin-right: 0;
+		margin-left: 0;
+		}
+	}
+
 	nav {
 
 
@@ -255,14 +319,6 @@
 				}
 			}
 		}
-	}
-
-	footer,
-	.inner-page-header,
-	section.hero,
-	.full-width {
-	margin-right: -20px;
-	margin-left: -20px;
 	}
 
 	.article-summaries article,

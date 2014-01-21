@@ -483,8 +483,8 @@ nav li:hover {
   animation: scale_slide 0.3s ease-out 1;
 }
 .slider-mask #slider .slide.hashicorp {
-  background: url(/images/home-hero/hashicorp.jpg) no-repeat center bottom;
-  background-size: cover;
+  background-image: url(/images/home-hero/hashicorp.jpg);
+  background-position: center center;
 }
 .slider-mask #slider .slide.hashicorp h1 {
   /*span{
@@ -492,7 +492,7 @@ nav li:hover {
 
 						&:after {
 						  background: linear-gradient(to right top, #48b4fb 50%, transparent 50%) !important;
-						}	
+						}
 	    			}*/
 }
 .slider-mask #slider .slide.vagrant {
@@ -501,14 +501,15 @@ nav li:hover {
 .slider-mask #slider .slide.vagrant h1 {
   /*span{
 	    				background-color: #48b4fb;
-						
+
 						&:after {
 						  background: linear-gradient(to right top, #48b4fb 50%, transparent 50%) !important;
-						}		    				
+						}
 	    			}*/
 }
 .slider-mask #slider .slide.packer {
   background: url(/images/home-hero/packer.jpg) no-repeat center bottom;
+  background-color: #e7f7f5;
 }
 .slider-mask #slider .slide.packer h1 span {
   background-color: #43d193 !important;
@@ -529,6 +530,7 @@ nav li:hover {
   position: absolute;
   bottom: 24px;
   right: 32px;
+  width: 500px;
   text-align: right;
 }
 .slider-mask #slider .slide .hero-content h1 {
@@ -565,7 +567,7 @@ nav li:hover {
   height: 28px;
   font-size: 13px;
   line-height: 24px;
-  height: 24px;
+  height: auto;
   margin-bottom: 0px;
   text-align: right;
 }
@@ -575,7 +577,7 @@ nav li:hover {
   font-weight: 500;
   color: #202020;
   background-color: #fff;
-  text-align: center;
+  text-align: right;
   padding: 0px 12px;
 }
 .slider-mask #slider .slidesjs-navigation {
@@ -587,7 +589,7 @@ nav li:hover {
   height: 80px;
   z-index: 2000;
   background-color: rgba(0, 0, 0, 0.2);
-  background-image: url('../images/slider-arrows.png');
+  background-image: url(/images/slider-arrows.png);
   background-repeat: no-repeat;
   text-indent: -9999px;
   white-space: nowrap;
@@ -1060,8 +1062,8 @@ article.product-item .product-image span.image {
   display: inline-block;
   width: 660px;
   height: 500px;
-  background: url(../images/products-sprite.png) 0 0 no-repeat;
-  background: -webkit-image-set(url(../images/products-sprite.png) 1x, url(../images/products-sprite@2x.png) 2x);
+  background: url(/images/products-sprite.png) 0 0 no-repeat;
+  background: -webkit-image-set(url(/images/products-sprite.png) 1x, url(/images/products-sprite@2x.png) 2x);
 }
 @media (max-width: 979px) {
   body.products {
@@ -1141,6 +1143,44 @@ footer .hashi-logo-monochrome {
   margin: 30px auto 30px -30px;
 }
 @media (max-width: 480px) {
+  .slider-mask #slider .slidesjs-pagination {
+    right: 10px;
+    left: auto;
+    bottom: 8px;
+  }
+  .slider-mask #slider .slide {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    -o-animation: none;
+    animation: none;
+  }
+  .slider-mask #slider .slide .hero-content {
+    right: 0;
+    bottom: 50px;
+    width: auto;
+  }
+  .slider-mask #slider .slide .hero-content h1 {
+    margin-right: 20px;
+  }
+  .slider-mask #slider .slide .hero-content h2 {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0 10px;
+    margin: 0px 10px 8px 10px;
+  }
+  .slider-mask #slider .slide .hero-content h2 span {
+    display: inline;
+    padding: 0;
+    background-color: transparent;
+  }
+  .slider-mask #slider .slide .hero-content .button {
+    margin-right: 10px;
+  }
   nav {
     position: absolute;
     height: auto;
@@ -1220,11 +1260,6 @@ footer .hashi-logo-monochrome {
   .inner-page .inner-page-header h1 {
     padding-top: 50px !important;
   }
-  .hero {
-    height: 400px;
-    background-size: 200%;
-    background-position: bottom center;
-  }
   .hero .hero-content {
     padding-top: 125px;
   }
@@ -1280,6 +1315,16 @@ footer .hashi-logo-monochrome {
   }
 }
 @media (max-width: 767px) {
+  body.index {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  body.index .article-summaries article,
+  body.index section.product,
+  body.index section.customers {
+    margin-right: 0;
+    margin-left: 0;
+  }
   nav a.hashi-logo {
     background: url(/images/hashi_icon.png) no-repeat 0 0 !important;
     height: 70px !important;
@@ -1303,13 +1348,6 @@ footer .hashi-logo-monochrome {
   }
   .product.vagrant ul li {
     margin-bottom: 40px;
-  }
-  footer,
-  .inner-page-header,
-  section.hero,
-  .full-width {
-    margin-right: -20px;
-    margin-left: -20px;
   }
   .article-summaries article,
   section.product,
