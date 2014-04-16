@@ -31,7 +31,7 @@ Some high level statistics we track:
 
 We've shipped a number of features to improve Vagrant Cloud:
 
-- **Box favoriting**. You can now track boxes by favorting them. Favorited
+- **Box favoriting**. You can now track boxes by favoriting them. Favorited
 boxes show up on your profile and in your dashboard.
 - **Authentication token management**. You can now revoke and create
 authentication tokens for use with the API. This includes tokens
