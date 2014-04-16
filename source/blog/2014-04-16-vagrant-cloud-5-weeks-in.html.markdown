@@ -80,13 +80,13 @@ email us at [biz@hashicorp.com](mailto:biz@hashicorp.com).
 
 Planned features include:
 
-- Box uploads. Uploading boxes directly to Vagrant Cloud either via
+- **Box uploads**. Uploading boxes directly to Vagrant Cloud either via
 the web console or the API, instead of providing a URL to the box file.
 This will likely be a paid feature.
-- Organizations, team management and access control. Management of
+- **Organizations, team management and access control**. Management of
 organizations and teams to allow read, write and admin access to specific
 boxes or groups of boxes.
-- Per-box "trust" analysis. We'll be introducing a system for providing
+- **Per-box "trust" analysis**. We'll be introducing a system for providing
 suggestions of how trustable a box is. Download numbers, favoriting,
 user profiles and more supports the "trustability" of a box.
 
