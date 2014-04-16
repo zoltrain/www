@@ -1,6 +1,6 @@
 ---
-page_title: "Vagrant Cloud: 5 weeks in"
-title: "Vagrant Cloud: 5 weeks in"
+page_title: "Vagrant Cloud: 5 Weeks In"
+title: "Vagrant Cloud: 5 Weeks In"
 list_image_url: /images/blog/vagrant-cloud-5-weeks-in/logo-side.png
 post_image_url: /images/blog/vagrant-cloud-5-weeks-in/logo-post.png
 ---
@@ -24,9 +24,8 @@ have signed up to distribute official Vagrant boxes.
 Some high level statistics we track:
 
 - We've seen 272,723 downloads of public Vagrant boxes via Vagrant 1.5
-- Vagrant Share proxies an average of N HTTP requests daily
+- Vagrant Share proxies an average of 35k HTTP requests daily
 - We expect to pass the 10,000 user mark before the end of the month
-
 
 ### General Improvements
 
