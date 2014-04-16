@@ -29,13 +29,22 @@ Some high level statistics we track:
 
 ### General Improvements
 
-A number of features to improve Vagrant Cloud:
+We've shipped a number of features to improve Vagrant Cloud:
 
-- Box favoriting
-- Authentication token management
-- Expanded user profiles
-- Session re-authentication for sensitive actions
-- Box and share statistics
+- **Box favoriting**. You can now track boxes by favorting them. Favorited
+boxes show up on your profile and in your dashboard.
+- **Authentication token management**. You can now revoke and create
+authentication tokens for use with the API. This includes tokens
+created via `vagrant login`.
+- **Expanded user profiles**. Profiles now include a text field for
+user descriptions, as well as using your email address for an avatar
+url via Gravatar.
+- **Session re-authentication**. Any action related
+to your account settings requires a "fresh" session. Because of this,
+we were able to extend "remember me" session length. *Note: We
+recently expired all sessions due to the Heartbleed vulnerability.*
+- **Box and share statistics**. Boxes now display total number of downloads,
+and shares display the bandwidth proxied per share.
 
 ### API
 
