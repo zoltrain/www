@@ -8,6 +8,7 @@ gem "middleman-minify-html", "~> 3.1.1"
 gem "rack-contrib", "~> 1.1.0"
 gem "therubyracer", "~> 0.12.0"
 gem "thin", "~> 1.5.0"
+gem "nokogiri"
 
 group :development do
   gem "highline", "~> 1.6.15"
