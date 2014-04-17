@@ -91,7 +91,7 @@ components anyone should build from scratch. Consul uses highly cited and
 peer-reviewed papers based on academic research as a foundation for these
 subsystems.
 
-**Messaging** is done via both gossip over UDP and TCP connections. For gossip,
+**Messaging** is done via gossip over both UDP and TCP connections. For gossip,
 we rely on
 [Serf](http://www.serfdom.io), built on top of
 [SWIM](http://www.cs.cornell.edu/~asdas/research/dsn02-swim.pdf). Serf is
