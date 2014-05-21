@@ -68,20 +68,16 @@ With envconsul, environmental variables are stored in Consul KV
 under some prefix (separated by "/"). For example, to configure
 our service "foo" we might store configuration like this:
 
-```
-$ curl -X PUT -d 'false' http://localhost:8500/v1/kv/foo/enabled
-true
-```
+    $ curl -X PUT -d 'false' http://localhost:8500/v1/kv/foo/enabled
+    true
 
 This stores the value `false` in the key `foo/enabled`.
 
 Then, with envconsul, we can turn these keys into environmental
 variables:
 
-```
-$ envconsul foo env
-ENABLED=false
-```
+    $ envconsul foo env
+    ENABLED=false
 
 `envconsul` is very UNIX-friendly application. It takes two mandatory
 arguments: a KV prefix to find data and then another application to run
@@ -98,10 +94,8 @@ you might do the following. Note that in a real production scenario, you
 probably aren't running the Rails built-in server directly, but it makes
 for a good example:
 
-```
-$ envconsul foo bin/rails server
-...
-```
+    $ envconsul foo bin/rails server
+    ...
 
 ## Automatic Reload
 
@@ -113,10 +107,8 @@ By adding the `-reload` flag to envconsul, envconsul will terminate
 (SIGTERM) and restart your application whenever a configuration
 key is added, removed, or changed:
 
-```
-$ envconsul -reload foo bin/rails server
-...
-```
+    $ envconsul -reload foo bin/rails server
+    ...
 
 The
 [Consul HTTP API](http://www.consul.io/docs/agent/http.html)
