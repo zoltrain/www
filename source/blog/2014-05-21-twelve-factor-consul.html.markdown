@@ -79,7 +79,7 @@ variables:
     $ envconsul foo env
     ENABLED=false
 
-`envconsul` is very UNIX-friendly application. It takes two mandatory
+`envconsul` is a very UNIX-friendly application. It takes two mandatory
 arguments: a KV prefix to find data and then another application to run
 along with its arguments. In the above example, we tell envconsul that
 our configuration is under the prefix `foo` and we want to run the
