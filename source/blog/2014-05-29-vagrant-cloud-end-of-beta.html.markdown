@@ -34,10 +34,9 @@ is also available on the API, allowing you to automate the building and
 uploading of boxes for distribution to your team. Box hosting requires
 an upgraded account. Pricing is detailed below.
 
-- **Custom Shares**. You can now specify custom names, domains and
-usernames that can access your Vagrant Share. This will let you do
-something like: `bob.example.com`, routing directly to your Vagrant
-Box while share is running. Username control lets your specify individual
+- **Custom Shares**. You can now specify custom names and domains. 
+This will let you do something like: `bob.example.com`, routing directly 
+to your Vagrant Box while share is running. Username control lets your specify individual
 Vagrant Cloud users that you want to access your share session.
 
 ### What Remains Free
@@ -70,7 +69,7 @@ we're previously free and are now paid will need to upgrade to continue
 using those features. This includes:
 
 - Private boxes
-- Private collaboraations
+- Private collaborations
 
 In order to continue accessing the private boxes, you'll need to upgrade
 the account hosting them to a paid plan. You will be billed based
