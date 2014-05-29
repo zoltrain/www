@@ -36,8 +36,7 @@ an upgraded account. Pricing is detailed below.
 
 - **Custom Shares**. You can now specify custom names and domains. 
 This will let you do something like: `bob.example.com`, routing directly 
-to your Vagrant Box while share is running. Username control lets your specify individual
-Vagrant Cloud users that you want to access your share session.
+to your Vagrant Box while share is running.
 
 ### What Remains Free
 
