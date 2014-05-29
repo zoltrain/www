@@ -74,6 +74,9 @@ In order to continue accessing the private boxes, you'll need to upgrade
 the account hosting them to a paid plan. You will be billed based
 on the number of private collaborators your currently have.
 
+Until then, you'll be on the Pro plan, giving you access to all of those
+features.
+
 If you do not upgrade before July 15th, you'll simply be downgraded
 to the free plan. If you have private boxes, you'll lose access to
 them, though they will remain visible and attached to your account.
