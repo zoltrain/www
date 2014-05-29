@@ -1,8 +1,8 @@
 ---
 page_title: "Vagrant Cloud: Organizations, Box Hosting and the end of Beta"
 title: "Vagrant Cloud: Organizations, Box Hosting and the end of Beta"
-list_image_url: TODO
-post_image_url: TODO
+list_image_url: /images/blog/vagrant-cloud-leaves-beta/logo-side.png
+post_image_url: /images/blog/vagrant-cloud-leaves-beta/header.png
 ---
 
 Today we take Vagrant Cloud officially out of beta, release
