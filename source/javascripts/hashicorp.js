@@ -98,7 +98,7 @@ $(document).ready(function(){
             effect: "fade",
             interval: 4500,
             auto: true,
-            restartDelay: 0
+            restartDelay: 20000
           },
           effect: {
             fade: {
@@ -108,7 +108,9 @@ $(document).ready(function(){
           },
           callback: {
             start: function(number) {
-              $('.slide').addClass('animate-slide');
+              if(!HSHC.Utils.isMobile) {
+                $('.slide').addClass('animate-slide');
+              }
             }
         }
         });
