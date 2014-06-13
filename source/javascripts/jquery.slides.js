@@ -200,7 +200,6 @@
       this.data = $.data(this);
       current = number > -1 ? number : this.data.current;
       $(".active", $element).removeClass("active");
-      console.log(current)
       return $(".slidesjs-pagination li:eq(" + current + ") a", $element).addClass("active");
     };
     Plugin.prototype.update = function() {
@@ -302,7 +301,7 @@
       });
       return slidesControl.children(":eq(" + previous + ")").css({
         display: "block",
-        left: -this.options.width
+        left: -this.options.width - 3000
       });
     };
     Plugin.prototype._touchstart = function(e) {
