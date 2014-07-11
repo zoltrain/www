@@ -57,8 +57,8 @@ But the process still wasn't perfect. Box maintainers could build
 machines with Packer, but they still had to interact with Vagrant Cloud
 web UI, and find somewhere to host the box files.
 
-With the introduction of the Vagrant Cloud Post-Processor alongside
-improvements to Vagrant Cloud, Packer runs can now conclude
+With the introduction of the [Vagrant Cloud Post-Processor](http://www.packer.io/docs/post-processors/vagrant-cloud.html)
+ alongside improvements to Vagrant Cloud, Packer runs can now conclude
 with the update and release of your `.box` files to your entire team.
 
 ![Example of a Vagrant Cloud Post-Processor run in Packer](/images/blog/automated-environments/pp-run.png)
