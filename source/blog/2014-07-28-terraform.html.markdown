@@ -184,6 +184,6 @@ following pages in particular are good next steps:
 
 * [GitHub](https://github.com/hashicorp/terraform) -
   The source code for Terraform is hosted on GitHub here if you want to
-  dive right in. We recommend reading the documentation before diving into a
+  dive right in. We recommend reading the documentation before diving into
   code, since an understanding of how Terraform works will help greatly in
   understanding the implementation.
