@@ -139,7 +139,7 @@ resource "heroku_domain" "web" {
     hostname = "www.terraform.io"
 }
 
-resource "heroku_addon" "webhooks"
+resource "heroku_addon" "webhooks" {
     app = "${heroku_app.web.name}"
     plan = "deployhooks:http"
     config {
