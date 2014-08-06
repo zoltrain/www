@@ -19,6 +19,11 @@ article.product-item {
 		line-height: 28px;
 	}
 
+	.span5{
+		position: relative;
+		z-index: 1;
+	}	
+
 	.product-click{
 		display: inline-block;
 		padding: 8px 20px;
@@ -103,6 +108,24 @@ article.product-item {
 		}
 	}	
 
+	&.terra{
+		h1,p{
+			color: @terra-black;
+		}
+
+		.product-click{
+			background-color: @terra-black;
+		}
+
+		.product-image{
+			span.image{
+				top: -42px;
+				left: 35px;
+				background-position: 0 -2000px;
+			}
+		}
+	}	
+
 	.product-image{
 		position: relative;
 		span.image{
@@ -142,7 +165,7 @@ article.product-item {
 				width: 330px;
 				height: 250px;
 				margin: 0 auto;
-				background-size: 330px 1000px;
+				background-size: 330px 1250px;
 			}
 		}
 
@@ -183,6 +206,16 @@ article.product-item {
 					top: 0;
 					left: -25px;
 					background-position: 0 -750px;
+				}
+			}
+		}
+
+		&.terra{
+			.product-image{
+				span.image{
+					top: 0;
+					left: 0;
+					background-position: 0 -1000px;
 				}
 			}
 		}			
