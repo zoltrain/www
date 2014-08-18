@@ -127,7 +127,7 @@ By adding the `-reload` flag, `consul-haproxy` will invoke the given
 command any time the configuration changes, allowing HAProxy to be
 reloaded:
 
-    $ consul-haproxy ... -reload "sudo restart haproxy"
+    $ consul-haproxy ... -reload "sudo reload haproxy"
 
 The [Consul HTTP API](http://www.consul.io/docs/agent/http.html)
 supports long polling for changes in the service catalog, which enables
