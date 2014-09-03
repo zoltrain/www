@@ -146,6 +146,9 @@ happily provisions on top of the DigitalOcean droplet.
 
 Additionally, DigitalOcean DNS may take some time to propagate.
 
+If you're interested in seeing detailed logs of what Terraform
+is doing, run the command with `TF_LOG=1 ...` prepended.
+
 ## Conclusion
 
 Setting up Discourse with Terraform is an interesting example of what
