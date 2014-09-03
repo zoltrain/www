@@ -60,10 +60,10 @@ visit the [documentation](http://www.terraform.io/docs/providers/index.html).
 Terraform is configured by `.tf` files. By default, Terraform collects
 all `*.tf` files in a directory and merges them together.
 
-You'll need to clone the following [example repository](https://github.com/hashicorp/discourse-terraform) with Git:
+You'll need to clone the following [example repository](https://github.com/pearkes/discourse-terraform) with Git:
 
 <pre class="prettyprint">
-$ git clone https://github.com/hashicorp/discourse-terraform.git
+$ git clone https://github.com/pearkes/discourse-terraform.git
 </pre>
 
 Once the repository is retrieved from GitHub, we can try running
