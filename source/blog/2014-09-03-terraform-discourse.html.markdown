@@ -101,7 +101,7 @@ output similar to the following:
         name:                 "" => "discourse"
         private_networking:   "" => "<computed>"
         region:               "" => "nyc2"
-        size:                 "" => "512mb"
+        size:                 "" => "2gb"
         ssh_keys.#:           "" => "1"
         ssh_keys.0:           "" => "YOUR_SSH_KEY_ID"
         status:               "" => "<computed>"
