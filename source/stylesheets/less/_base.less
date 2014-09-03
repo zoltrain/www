@@ -11,7 +11,6 @@ body {
   line-height: @base-line-height;
   color: @black;
   background-color: @white;
-  letter-spacing: 2px;
   .museo-sans-regular;
 }
 
@@ -74,7 +73,7 @@ h6 {
 	  line-height: @font-size;
 	}
 
-p {
+p, ul, ol {
 	letter-spacing: 1px;
 	line-height: 32px;
 
@@ -91,9 +90,10 @@ p {
 	}
 }
 
-a {
+a, ul.unstyled a {
 	color: inherit;
 	text-decoration: none;
+	border-bottom: none;
 
 
 	&:hover {
@@ -116,7 +116,7 @@ ul {
 }
 
 li {
-line-height: @base-line-height;
+line-height: @base-line-height + 5;
 }
 
 blockquote {

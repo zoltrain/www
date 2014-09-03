@@ -1,8 +1,8 @@
 ---
 page_title: "Deploying Discourse with Terraform"
 title: "Deploying Discourse with Terraform"
-list_image_url: "/images/blog/terraform/small.png"
-post_image_url: "/images/blog/terraform/big.png"
+list_image_url: "/images/blog/terraform-discourse/side.png"
+post_image_url: "/images/blog/terraform-discourse/top.png"
 ---
 
 In this blog post, we'll show how Terraform can create a running instance of
@@ -45,7 +45,7 @@ visit the [documentation](http://www.terraform.io/docs/providers/index.html).
 
 1. Access or create a DigitalOcean Account
     - [Sign up](https://cloud.digitalocean.com/registrations/new)
-        or [log in](https://cloud.digitalocean.com)
+        or [log in](https://cloud.digitalocean.com/login)
     - Get a write-enabled [access token](https://cloud.digitalocean.com/settings/tokens/new)
     - Add [your SSH key](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets) and
         retrieve the ID with `curl -X GET "https://api.digitalocean.com/v2/account/keys" -H "Authorization: Bearer $ACCESS_TOKEN"`
@@ -60,11 +60,11 @@ visit the [documentation](http://www.terraform.io/docs/providers/index.html).
 Terraform is configured by `.tf` files. By default, Terraform collects
 all `*.tf` files in a directory and merges them together.
 
-You'll need to clone the following example repository with Git:
+You'll need to clone the following [example repository](https://github.com/hashicorp/discourse-terraform) with Git:
 
-```
+<pre class="prettyprint">
 $ git clone https://github.com/hashicorp/discourse-terraform.git
-```
+</pre>
 
 Once the repository is retrieved from GitHub, we can try running
 Terraform.
@@ -75,69 +75,65 @@ Although not required for a `terraform apply`, `terraform plan` helps
 you visualize what Terraform will do. In this case, you should see
 output similar to the following:
 
-```
-$ terraform plan \
-    -var 'developer_email=YOUR_ACCESS_KEY' \
-    -var 'smtp_password=YOUR_SECRET_KEY' \
-    -var 'domain=YOUR_DOMAIN' \
-    -var 'ssh_key_id=YOUR_SSH_KEY_ID' \
-    -var 'do_token=YOUR_DO_TOKEN' \
-    -var 'mailgun_key=YOUR_MAILGUN_KEY' \
-    -var 'ssh_key_path=YOUR_KEY_PATH'
-...
+    $ terraform plan \
+        -var 'developer_email=YOUR_ACCESS_KEY' \
+        -var 'smtp_password=YOUR_SECRET_KEY' \
+        -var 'domain=YOUR_DOMAIN' \
+        -var 'ssh_key_id=YOUR_SSH_KEY_ID' \
+        -var 'do_token=YOUR_DO_TOKEN' \
+        -var 'mailgun_key=YOUR_MAILGUN_KEY' \
+        -var 'ssh_key_path=YOUR_KEY_PATH'
+    ...
 
-+ digitalocean_domain.discourse
-    ip_address: "" => "${digitalocean_droplet.discourse.ipv4_address}"
-    name:       "" => "YOUR_DOMAIN"
+    + digitalocean_domain.discourse
+        ip_address: "" => "${digitalocean_droplet.discourse.ipv4_address}"
+        name:       "" => "YOUR_DOMAIN"
 
-+ digitalocean_droplet.discourse
-    backups:              "" => "<computed>"
-    image:                "" => "ubuntu-14-04-x64"
-    ipv4_address:         "" => "<computed>"
-    ipv4_address_private: "" => "<computed>"
-    ipv6:                 "" => "<computed>"
-    ipv6_address:         "" => "<computed>"
-    ipv6_address_private: "" => "<computed>"
-    locked:               "" => "<computed>"
-    name:                 "" => "discourse"
-    private_networking:   "" => "<computed>"
-    region:               "" => "nyc2"
-    size:                 "" => "512mb"
-    ssh_keys.#:           "" => "1"
-    ssh_keys.0:           "" => "YOUR_SSH_KEY_ID"
-    status:               "" => "<computed>"
+    + digitalocean_droplet.discourse
+        backups:              "" => "<computed>"
+        image:                "" => "ubuntu-14-04-x64"
+        ipv4_address:         "" => "<computed>"
+        ipv4_address_private: "" => "<computed>"
+        ipv6:                 "" => "<computed>"
+        ipv6_address:         "" => "<computed>"
+        ipv6_address_private: "" => "<computed>"
+        locked:               "" => "<computed>"
+        name:                 "" => "discourse"
+        private_networking:   "" => "<computed>"
+        region:               "" => "nyc2"
+        size:                 "" => "512mb"
+        ssh_keys.#:           "" => "1"
+        ssh_keys.0:           "" => "YOUR_SSH_KEY_ID"
+        status:               "" => "<computed>"
 
-+ mailgun_domain.mail
-    name:                "" => "YOUR_DOMAIN"
-    receiving_records.#: "" => "<computed>"
-    sending_records.#:   "" => "<computed>"
-    smtp_login:          "" => "<computed>"
-    smtp_password:       "" => "YOUR_SECRET_KEY"
-    spam_action:         "" => "disabled"
-    wildcard:            "" => "<computed>"
-```
+    + mailgun_domain.mail
+        name:                "" => "YOUR_DOMAIN"
+        receiving_records.#: "" => "<computed>"
+        sending_records.#:   "" => "<computed>"
+        smtp_login:          "" => "<computed>"
+        smtp_password:       "" => "YOUR_SECRET_KEY"
+        spam_action:         "" => "disabled"
+        wildcard:            "" => "<computed>"
 
 If you're happy with the output, you can move on to apply and create
 the resources.
 
 ## Running the Apply Command
 
-```
-$ terraform apply \
-    -var 'developer_email=YOUR_ACCESS_KEY' \
-    -var 'smtp_password=YOUR_SECRET_KEY' \
-    -var 'domain=YOUR_DOMAIN' \
-    -var 'ssh_key_id=YOUR_SSH_KEY_ID' \
-    -var 'do_token=YOUR_DO_TOKEN' \
-    -var 'mailgun_key=YOUR_MAILGUN_KEY' \
-    -var 'ssh_key_path=YOUR_KEY_PATH'
-...
-```
+    $ terraform apply \
+        -var 'developer_email=YOUR_ACCESS_KEY' \
+        -var 'smtp_password=YOUR_SECRET_KEY' \
+        -var 'domain=YOUR_DOMAIN' \
+        -var 'ssh_key_id=YOUR_SSH_KEY_ID' \
+        -var 'do_token=YOUR_DO_TOKEN' \
+        -var 'mailgun_key=YOUR_MAILGUN_KEY' \
+        -var 'ssh_key_path=YOUR_KEY_PATH'
+    ...
 
 This will create your infrastructure, showing you the output along
 the way. In this example, the following steps occur:
 
-1. The domain is created on Mailgun
+1. The domain is created on Mailgun.
 2. The droplet (server) is created, provisioned with SMTP details and
 other configurations.
 3. The DNS records are created for mail and the application, using the
@@ -147,6 +143,8 @@ The whole process takes some time, depending on several factors, as
 the provisioner on the server is installing, configuring and restarting
 Discourse. Under the hood, this uses Docker, which Terraform
 happily provisions on top of the DigitalOcean droplet.
+
+Additionally, DigitalOcean DNS may take some time to propagate.
 
 ## Conclusion
 
