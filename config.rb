@@ -1,7 +1,3 @@
-require 'rack/ssl-enforcer'
-
-use Rack::SslEnforcer, :only_environments => ['production']
-
 page "/feed.xml", :layout => false
 
 set :css_dir, 'stylesheets'
