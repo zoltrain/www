@@ -3,6 +3,10 @@ require "rack/contrib/not_found"
 require "rack/contrib/response_headers"
 require "rack/contrib/static_cache"
 require "rack/contrib/try_static"
+require 'rack/ssl-enforcer'
+
+# Force SSL
+use Rack::SslEnforcer, :only_environments => ['production']
 
 # Properly compress the output if the client can handle it.
 use Rack::Deflater
