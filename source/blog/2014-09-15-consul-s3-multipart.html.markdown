@@ -11,7 +11,7 @@ is box hosting, allowing Vagrant boxes to be hosted and managed
 in Vagrant Cloud. We had received serveral reports that uploading
 very large Vagrant boxes would fail reliably, and we spend part of last
 week resolving this issue. We use S3 as one of our backing stores, and
-eventually it was discovered that S3 limits the size of a single object
+eventually it was discovered that S3 limits the size of a single upload
 to 5GB.
 
 READMORE
