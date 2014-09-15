@@ -149,7 +149,7 @@ with the Put operation:
 8. If an error is encountered at any step, abort the upload, delete all the parts,
    and then delete the WAL.
 
-This is the psuedo code for our atomic upload. We make use of Write Ahead Logging
+This is the pseudo code for our atomic upload. We make use of Write Ahead Logging
 so that we can safely roll back any partial uploads, and we store our log on Consul
 to guard against a node failure. To handle node failure, all of our StorageLocker instances
 do a periodic scan for abandoned WAL entries and go to step 8, invoking
