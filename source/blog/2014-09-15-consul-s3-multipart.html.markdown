@@ -1,6 +1,7 @@
 ---
 page_title: "Atomic Multi-Part S3 Uploads with Consul"
 title: "Atomic Multi-Part S3 Uploads with Consul"
+list_image_url: "/images/s3-upload-fail.png"
 ---
 
 [Vagrant Cloud](https://vagrantcloud.com) is a service provided
@@ -32,7 +33,9 @@ product. BinStore is a public facing service
 that speaks HTTP, and provides an authenticated way to expose
 StorageLocker to the world.
 
-![Storage Architecture](/images/storage-arch.png)
+<div class="align-center">
+  <img src="/images/storage-arch.png" alt="Storage Architecture"></img>
+</div>
 
 Given this context, the logical place to fix our upload limitation
 was in StorageLocker, but even here we had a choice. We could use the
@@ -49,7 +52,9 @@ maybe they all upload but we fail to commit or abort. It's possible for
 StorageLocker to crash, or for our datacenter to lose connectivity mid-upload.
 The number of potential error cases are too many to enumerate.
 
-![S3 Upload Failure](/images/s3-upload-fail.png)
+<div class="align-center">
+  <img src="/images/s3-upload-fail.png" alt="S3 Upload Failure"></img>
+</div>
 
 In a traditional RDBMS, our transaction takes place in the context of
 a persistent connection to the database. If we fail in the middle of the
@@ -111,7 +116,9 @@ from the respective backends. Expiration is managed like the S3 case, by applyin
 a time based heuristic. We don't expect any uploads to span multiple days, made
 further unlikely since we timeout an upload much earlier.
 
-![S3 Consul Upload](/images/s3-consul-upload.png)
+<div class="align-center">
+  <img src="/images/s3-consul-upload.png" alt="S3 Consul Upload"></img>
+</div>
 
 ## The Devil is in the Details
 
