@@ -877,6 +877,21 @@ pre span {
   font-weight: 300;
   text-align: left;
 }
+.gray {
+  background-color: #f6f7fb;
+}
+.blue {
+  background-color: #1e71a1;
+}
+.page-title {
+  background-color: #f6f7fb;
+}
+.page-title h1 {
+  color: #48b4fb;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 50px 0;
+}
 @media (max-width: 1281px) {
   .inner-page .inner-page-header h1 {
     padding: 0 0 27px 15px;
@@ -2375,87 +2390,6 @@ article.right-aligned {
 }
 article.support .content {
   padding-top: 50px;
-}
-.gray {
-  background-color: #f6f7fb;
-}
-.blue {
-  background-color: #1e71a1;
-}
-.page-title {
-  background-color: #f6f7fb;
-}
-.page-title h1 {
-  color: #48b4fb;
-  font-size: 36px;
-  line-height: 36px;
-  margin: 50px 0;
-}
-.sidebar {
-  position: relative;
-  padding-top: 50px;
-}
-.sidebar .bg-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 640px;
-  height: 371px;
-  background: #ffffff url(/images/sidebar-grid.jpg) 99% center no-repeat;
-}
-.sidebar .sidebar-nav {
-  position: relative;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.sidebar .sidebar-nav a {
-  color: #151515;
-}
-.sidebar .sidebar-nav :last-child {
-  border-bottom: none;
-}
-.sidebar .sidebar-nav li {
-  position: relative;
-}
-.sidebar .sidebar-nav li > a:hover {
-  border-right: 4px solid #5be764;
-}
-.sidebar .sidebar-nav li > a:hover,
-.sidebar .sidebar-nav li > a:focus {
-  background-color: transparent !important;
-}
-.sidebar .sidebar-nav > li {
-  color: #5be764;
-  padding: 10px 0;
-  border-bottom: 1px solid #fff;
-}
-.sidebar .sidebar-nav > li.active > a {
-  border-right: 4px solid #5be764;
-}
-.sidebar .sidebar-nav > li.active .nav {
-  display: block;
-}
-.sidebar .sidebar-nav > li.active .nav li.active a {
-  border-right: 4px solid #5be764;
-}
-.sidebar .sidebar-nav > li > a {
-  color: #5be764;
-  padding-right: 40px;
-  font-size: 18px;
-  line-height: 22px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.sidebar .sidebar-nav .nav {
-  margin: 8px 0;
-}
-.sidebar .sidebar-nav .nav > li {
-  margin-left: 12px;
-}
-.sidebar .sidebar-nav .nav > li > a {
-  margin: 8px 0;
-  font-size: 14px;
-  line-height: 18px;
 }
 body.about article {
   padding: 120px 0;
