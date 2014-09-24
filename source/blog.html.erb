@@ -3,35 +3,51 @@ page_title: Blog
 title: Blog
 ---
 
-<section class="blog-landing article-summaries">
+<section class="blog-landing article-summaries inner-page">
 
+<!-- page title -->
+<div id="subheader" class="inner-page-header">
+  <div class="container">
+    <div class="row">
+      <h1 class="headline">Blog</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container">
 <% blog.articles.each_index do |i| %>
 <% article = blog.articles[i] %>
-<article class="right-aligned<%= i % 2 != 0 ? " gray" : "" %>">
-<div class="container">
+<article class="right-aligned">
 	<div class="row">
 		<% if article.data.list_image_url %>
 		<!-- post summary content -->
-		<div class="span4 blog-image">
+		<div class="col-md-4 col-sm-12 blog-image">
 			<%= image_tag article.data.list_image_url, :width => "287", :height => "284" %>
 		</div>	<!-- span -->
-		<div class="span7">
-			<h6 class="meta date"><%= article.date.strftime('%b %e %Y') %></h6>
+		<div class="col-md-8 col-sm-12">
 			<h1><a href="<%= article.url %>"><%= article.title %></a></h1>
+			<div class="meta-wrap">
+				<span class="meta date"><%= article.date.strftime('%b %e %Y') %></span>
+				<a href="#" class="meta author">Mitchell Hashimoto</a>
+				<a href="#" lass="meta category last">Mitchell Hashimoto</a>
+			</div>
 			<p><%= article.summary %></p>
-			<a class="read-more" href="<%= article.url %>">read more</a>
+			<a class="hbtn outline-btn black large read-more" href="<%= article.url %>">read more</a>
 		</div>	<!-- span -->
 		<% else %>
-		<div class="span8 offset2">
-			<h6 class="meta date"><%= article.date.strftime('%b %e %Y') %></h6>
+		<div class="col-md-8 col-md-offset-2 col-sm-12">
 			<h1><%= article.title %></h1>
+			<div class="meta-wrap">
+				<span class="meta date"><%= article.date.strftime('%b %e %Y') %></span>
+				<a href="#" class="meta author">Mitchell Hashimoto</a>
+				<a href="#" lass="meta category last">Mitchell Hashimoto</a>
+			</div>
 			<p><%= article.summary %></p>
-			<a class="read-more" href="<%= article.url %>">read more</a>
+			<a class="hbtn outline-btn black large read-more" href="<%= article.url %>">read more</a>
 		</div>
 		<% end %>
 	</div>	<!-- row -->
-</div> <!-- container -->
 </article>
 <% end %>
-
+</div> <!-- container -->
 </section> <!-- blog landing -->

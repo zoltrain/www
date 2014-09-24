@@ -840,12 +840,6 @@ pre span {
 .button.disabled {
   background-color: #f7f7f9;
 }
-a.read-more {
-  color: #48b4fb;
-}
-a.read-more:hover {
-  color: #16a0fa;
-}
 .loading {
   text-align: center;
   font-size: 18px;
@@ -2222,30 +2216,33 @@ div.align-center {
 .blog-landing .blog-image {
   text-align: center;
 }
-.article-summaries article {
+.blog article {
   padding: 80px 0;
 }
-.article-summaries article:first-child {
+.blog article:first-child {
   padding: 40px 0 80px;
 }
-.article-summaries h1 {
+.blog h1 {
   font-size: 50px;
   line-height: 55px;
   padding-bottom: 30px;
 }
-.article-summaries pre {
+.blog pre {
   margin-top: 30px;
 }
-.article-summaries .big-background {
+.blog .big-background {
   background-color: #151515 !important;
   color: #ffffff;
 }
-.article-summaries .big-background .date {
+.blog .big-background .date {
   color: #ffffff;
 }
-.article-summaries .big-background img {
+.blog .big-background img {
   opacity: .7;
   background: #151515;
+}
+.blog a.read-more {
+  margin-top: 20px;
 }
 .page article {
   padding: 60px 0;
@@ -2346,6 +2343,9 @@ article.support .vimeo {
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+article.right-aligned {
+  border-bottom: 2px solid #f1f1f1;
 }
 article.support .content {
   padding-top: 50px;
