@@ -10,10 +10,13 @@
 			</div>
 			<% end %>
 			<div class="row">
-				<div class="span8 offset2">
-					<h6 class="meta date"><%= current_article.date.strftime('%b %e %Y') %></h6>
+				<div class="col-md-8 col-md-offset-2">
 					<h1><%= current_article.title %></h1>
-
+					<div class="meta-wrap">
+						<span class="meta date"><%= current_article.date.strftime('%b %e %Y') %></span>
+						<a href="#" class="meta author">Mitchell Hashimoto</a>
+						<a href="#" class="meta category last">Consul</a>
+					</div><!--meta-wrap-->
 					<%= current_article.body %>
 				</div>
 			</div>
