@@ -16,14 +16,17 @@
             .dropdown{
                 box-shadow: none;
 
-                .btn-default:hover,
-                .btn-default:focus,
-                .btn-default:active,
-                .btn-default.active,
-                &.open .dropdown-toggle.btn-default{
+
+                &.open .dropdown-toggle.btn-default,
+                .btn-default:focus:hover{
                     background-color: @blue;
                     color: @white;
                     box-shadow: none;
+                }
+
+                .btn-default:focus{
+                    background-color: @white;
+                    color: @black;
                 }
 
                 button{
@@ -46,6 +49,10 @@
                         margin: -3px 0 0 5px;
                     }
                 }
+
+                &.open button:hover{
+                    box-shadow: none;
+                }                
 
                 .dropdown-menu{
                     margin: 0;

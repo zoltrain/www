@@ -2256,14 +2256,15 @@ div.align-center {
 .blog #subheader #blogheader-meta .dropdown {
   box-shadow: none;
 }
-.blog #subheader #blogheader-meta .dropdown .btn-default:hover,
-.blog #subheader #blogheader-meta .dropdown .btn-default:focus,
-.blog #subheader #blogheader-meta .dropdown .btn-default:active,
-.blog #subheader #blogheader-meta .dropdown .btn-default.active,
-.blog #subheader #blogheader-meta .dropdown.open .dropdown-toggle.btn-default {
+.blog #subheader #blogheader-meta .dropdown.open .dropdown-toggle.btn-default,
+.blog #subheader #blogheader-meta .dropdown .btn-default:focus:hover {
   background-color: #48b4fb;
   color: #ffffff;
   box-shadow: none;
+}
+.blog #subheader #blogheader-meta .dropdown .btn-default:focus {
+  background-color: #ffffff;
+  color: #151515;
 }
 .blog #subheader #blogheader-meta .dropdown button {
   font-size: 12px;
@@ -2292,6 +2293,9 @@ div.align-center {
 }
 .blog #subheader #blogheader-meta .dropdown button .caret {
   margin: -3px 0 0 5px;
+}
+.blog #subheader #blogheader-meta .dropdown.open button:hover {
+  box-shadow: none;
 }
 .blog #subheader #blogheader-meta .dropdown .dropdown-menu {
   margin: 0;
