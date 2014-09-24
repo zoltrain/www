@@ -2291,7 +2291,7 @@ div.align-center {
   box-shadow: 3px 4px 0px 1px rgba(0, 140, 232, 0.15);
 }
 .blog #subheader #blogheader-meta .dropdown button .caret {
-  margin-left: 5px;
+  margin: -3px 0 0 5px;
 }
 .blog #subheader #blogheader-meta .dropdown .dropdown-menu {
   margin: 0;
