@@ -727,7 +727,6 @@ h6 {
 p,
 ul,
 ol {
-  letter-spacing: 1px;
   line-height: 32px;
 }
 p a,
@@ -1951,7 +1950,7 @@ div.align-center {
 #products #products-display .terraform {
   /*.black-caret-right{
                 background: url(/images/terraform-caret-right.png) 0 0 no-repeat;
-                .img-retina("/images/terraform-caret-right.png", "/images/terraform-caret-right@2x.png", 6px, 9px);                
+                .img-retina("/images/terraform-caret-right.png", "/images/terraform-caret-right@2x.png", 6px, 9px);
             } */
 }
 #products #products-display .terraform .product-logo {
@@ -2139,7 +2138,7 @@ div.align-center {
   margin-bottom: 15px;
 }
 .hiring p {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 22px;
   color: #868686;
   margin-bottom: 20px;
@@ -2318,7 +2317,7 @@ div.align-center {
 .page article ul li,
 .page article p {
   color: #6f7c82;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.6em;
   letter-spacing: 0;
   margin-bottom: 24px;
@@ -2412,7 +2411,7 @@ body.about .team h4 {
 }
 body.about .team p {
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4em;
 }
 body.about .team .twitter-about {
@@ -2469,6 +2468,9 @@ body.about .quotes .quotes .quote p {
   font-family: "Lato", helvetica, arial, sans-serif;
   font-style: normal;
   font-weight: 300;
+}
+body.about .quotes .quotes .temp-big p {
+  font-size: 20px;
 }
 body.about .quotes .quotes .q1 i {
   width: 186px;
