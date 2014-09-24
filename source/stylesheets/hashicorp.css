@@ -864,6 +864,24 @@ pre span {
   position: relative;
   left: 41.66666666666667%;
 }
+.inner-page .inner-page-header {
+  background-color: #48b4fb;
+  color: #ffffff;
+}
+.inner-page .inner-page-header h1 {
+  padding: 64px 0 54px 15px;
+  font-size: 52px;
+  line-height: 1.1em;
+  font-family: "Lato", helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  text-align: left;
+}
+@media (max-width: 1281px) {
+  .inner-page .inner-page-header h1 {
+    padding: 0 0 27px 15px;
+  }
+}
 #header {
   position: relative;
   height: 100px;
@@ -2216,6 +2234,27 @@ div.align-center {
 .blog-landing .blog-image {
   text-align: center;
 }
+.blog #subheader #blogheader-meta {
+  background-color: #f6f7fb;
+  margin-bottom: 80px;
+  padding: 35px;
+}
+.blog #subheader #blogheader-meta .blog-categories {
+  list-style-type: none;
+  padding-left: 0;
+}
+.blog #subheader #blogheader-meta .blog-categories li {
+  display: inline-block;
+  margin-right: 8px;
+}
+.blog #subheader #blogheader-meta .blog-categories li.active a,
+.blog #subheader #blogheader-meta .blog-categories li:hover a {
+  background-color: #48b4fb;
+  color: white;
+}
+.blog #subheader #blogheader-meta .blog-categories li:last-child {
+  margin-right: 0;
+}
 .blog article {
   padding: 80px 0;
 }
@@ -2269,22 +2308,9 @@ div.align-center {
   letter-spacing: 0;
   margin-bottom: 24px;
 }
-.inner-page .inner-page-header {
-  background-color: #48b4fb;
-  color: #ffffff;
-}
-.inner-page .inner-page-header h1 {
-  padding: 64px 0 54px 15px;
-  font-size: 52px;
-  line-height: 1.1em;
-  font-family: "Lato", helvetica, arial, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  text-align: left;
-}
 .pagination {
   height: 80px;
-  background-color: #f7f6f1;
+  background-color: #f6f7fb;
   font-family: "Lato", helvetica, arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2351,13 +2377,13 @@ article.support .content {
   padding-top: 50px;
 }
 .gray {
-  background-color: #f7f6f1;
+  background-color: #f6f7fb;
 }
 .blue {
   background-color: #1e71a1;
 }
 .page-title {
-  background-color: #f7f6f1;
+  background-color: #f6f7fb;
 }
 .page-title h1 {
   color: #48b4fb;
@@ -2873,14 +2899,6 @@ body.jobs #chat p {
   font-size: 22px;
   line-height: 26px;
   color: #183652;
-}
-/*@media (min-width: 768px) {
-
-}*/
-@media (max-width: 1281px) {
-  .inner-page .inner-page-header h1 {
-    padding: 32px 0 27px 15px;
-  }
 }
 @media (max-width: 480px) {
   body.jobs #chat h2 .chat {

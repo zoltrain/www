@@ -7,6 +7,35 @@
 
 .blog {
 
+    #subheader{
+        #blogheader-meta{
+            background-color: @gray-background;
+            margin-bottom: 80px;
+            padding: 35px;
+
+            .blog-categories{
+                list-style-type: none;
+                padding-left: 0;
+
+                li{
+                    display: inline-block;
+                    margin-right: 8px;
+
+                    &.active, &:hover{
+                        a{
+                            background-color: @blue;
+                            color: white;
+                        }
+                    }
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
     article {
         padding: 80px 0;
 
@@ -72,22 +101,6 @@
             margin-bottom: 24px;
         }     
     }
-}
-
-.inner-page {
-    .inner-page-header {
-        background-color: @blue;
-        color: @white;
-
-        h1 {
-            padding: 64px 0 54px 15px;
-            font-size: 52px;
-            line-height: 1.1em;
-            .lato-light;
-            text-align: left;
-        }
-    } //inner page header
-
 }
 
 .pagination {
