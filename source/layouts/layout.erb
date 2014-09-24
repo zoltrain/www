@@ -8,20 +8,19 @@
 		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
 		<!-- styles -->
-		<%= stylesheet_link_tag "bootstrap", "less/hashicorp" %>
+		<%= stylesheet_link_tag "bootstrap.min", "owl.carousel", "owl.transitions", "jquery.jscrollpane", "hashicorp" %>
 
 		<!-- lib js -->
-		<%= javascript_include_tag "jquery" %>
+	  <%= javascript_include_tag "jquery.min" %>
 		<%= javascript_include_tag "modernizr" %>
-		<%= javascript_include_tag "bootstrap.min" %>
-		<%= javascript_include_tag "backstretch" %>
-		<%= javascript_include_tag "jquery.slides" %>
+		<%= javascript_include_tag "bootstrap" %>
+		<%= javascript_include_tag "owl.carousel" %>
+		<%= javascript_include_tag "jquery.jscrollpane.min" %>
+		<%= javascript_include_tag "jquery.mousewheel" %>
 		<%= javascript_include_tag "hashicorp" %>
 
 		<!-- fonts -->
-		<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="https://use.typekit.net/xfs6zus.js"></script>
-		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 
 		<!-- Atom -->
 		<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="HashiCorp ATOM Feed">
@@ -41,43 +40,9 @@
 		</script>
 	</head>
 	<body class="<%= page_classes %>">
-		<nav>
-		<!-- hashi logo -->
-		<a class="hashi-logo" href="/">HashiCorp</a>
-		<!-- nav -->
-		<ul class="pull-right unstyled">
-			<li><a href="/products">Products</a></li>
-			<li><a href="/blog">Blog</a></li>
-			<li class="contact"><a href="#">Contact</a></li>
-		</ul>
-		</nav>
-
-		<!-- wrap everything to offset static header height -->
-		<div class="wrapper">
-			<%= yield %>
-
-			<!-- footer -->
-			<footer>
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<!-- footer stuff -->
-						<h1>
-							Contact Us
-						</h1>
-						<h4 class="contact-link">
-							<a href="mailto:hello@hashicorp.com">hello@hashicorp.com</a>
-						</h4>
-						<div class="hashi-logo-monochrome"></div>
-						<h6 class="legal">
-							&#169; 2014 HashiCorp
-						</h6>
-
-					</div> <!-- span6 -->
-				</div> <!-- row -->
-			</div> <!-- container -->
-			</footer>
-		</div>
+		<%= partial "layouts/nav" %>
+		<%= yield %>
+		<%= partial "layouts/footer" %>
 	</body>
 	<!-- hc -->
 </html>

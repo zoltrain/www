@@ -1,27 +1,3 @@
-// add dropshadow to nav on scroll
-$(document).ready(function(){
-  $(document).scroll(function() {
-    var nav = $('nav');
-    var topPos = $(document).scrollTop();
-
-    if (topPos <= 0) {
-      nav.removeClass("drop-shadow");
-    } else {
-      if (!nav.hasClass('drop-shadow')) {
-        nav.addClass("drop-shadow");
-      }
-    }
-  });
-});
-
-// scroll to top
-$(document).ready(function(){
-  $('.contact').click(function(){
-    $("html, body").animate({ scrollTop: $(document).height()-$(window).height() }, 600);
-    return false;
-  });
-});
-
 
 //slider
 (function ($, global) {
@@ -48,10 +24,47 @@ $(document).ready(function(){
 
   }());
 
+  HSHC.Hero = (function () {
+    return {
+
+      init: function () {
+        this.startAnimation();
+      },
+
+      startAnimation: function(){
+        var _this = this;
+        setTimeout(_this.showHeroLogo, 100);
+     
+        /*for(var i = 1; i < 5; i++) {
+          (function(index) {
+              setTimeout(function() { 
+                $('.hexagons .hex'+index).addClass('in'); 
+              }, 400 + (i*300));
+          })(i);
+        }*/        
+
+        for(var i = 1; i < 6; i++) {
+          (function(index) {
+              setTimeout(function() { 
+                $('.hero-prod-logos .prod.p'+index).addClass('in'); 
+              }, 700 + (i*300));
+          })(i);
+        }
+     
+      },
+
+      showHeroLogo: function(){
+        $('.hero-logo').addClass('in');
+      },
+
+    }
+  }());  
+
   HSHC.Slider = (function () {
     return {
 
       ui : null,
+      prevSlideClass: null,
 
       init: function () {
         var _this = this;
@@ -59,73 +72,161 @@ $(document).ready(function(){
         //cache elements
         this.ui = {
           $doc: $(window),
-          $slider: $('#slider'),
-          $pagination: null
+          $slider: $('.slider'),
+          $productsDisplay: $('#products-display'),
+          $productsNav: $('#products-nav li')
         }
 
-        this.initSlider();
-        this.addEventListeners();
+        _this.initSlider();
+        _this.addEventListeners();
       },
 
       addEventListeners: function(){
         var _this = this;
 
-        if(HSHC.Utils.isMobile)
-          return;
+        this.ui.$productsNav.click(function(){
+          var index = $(this).index();
+          _this.ui.$slider.data('owlCarousel').goTo(index);
+          return false;
+        })
 
-        _this.ui.$doc.scroll(function() {
+        if(HSHC.Utils.isMobile)
+          return;        
+        /*_this.ui.$doc.scroll(function() {
           var top = _this.ui.$doc.scrollTop(),
               speedAdj = (top*0.6),
               speedAdjOffset = speedAdj - top;
 
           _this.ui.$slider.css('webkitTransform', 'translate(0, '+ speedAdj +'px)');
           _this.ui.$slider.find('.container').css('webkitTransform', 'translate(0, '+  speedAdjOffset +'px)');
-        })
+        })*/
       },
 
       initSlider: function(){
-        this.ui.$slider.slidesjs({
-          width: 940,
-          height: 528,
-          navigation: {
-            effect: "fade"
+        var _this = this;
+        
+        this.ui.$slider.owlCarousel({
+          //autoPlay : 3000,
+          stopOnHover : true,
+          slideSpeed: 600,
+          pagination: false,
+          goToFirstSpeed : 2000,
+          singleItem : true,
+          autoHeight : true,
+          transitionStyle: 'backSlide',
+          afterInit: function(){
+            _this.prevSlideClass = _this.ui.$productsNav[this.currentItem].getAttribute('data-prod');
           },
-          pagination: {
-            effect: "fade"
-          },
-          play: {
-            active: false,
-            effect: "fade",
-            interval: 4500,
-            auto: true,
-            restartDelay: 20000
-          },
-          effect: {
-            fade: {
-              speed: 10,
-              crossfade: false
-            }
-          },
-          callback: {
-            start: function(number) {
-              if(!HSHC.Utils.isMobile) {
-                $('.slide').addClass('animate-slide');
-              }
-            }
-        }
-        });
+          afterAction : function(elem, num){
+            _this.handleSliderUpdate(this.currentItem);
+          }
+        });      
+      },
 
-        this.ui.$pagination = $('.slidesjs-pagination');
+      handleSliderUpdate: function(num){
+        var _this = this;
+        var li = this.ui.$productsNav[num];
+        var classToAdd = li.getAttribute('data-prod');
+
+        this.ui.$productsDisplay.removeClass(_this.prevSlideClass).addClass(classToAdd);
+        _this.prevSlideClass = classToAdd;
+
+        this.ui.$productsNav.removeClass('active');
+        $(li).addClass('active');
       }
 
     }
   }());
 
+  HSHC.Positions = (function () {
+    return {
+
+      init: function () {
+        var _this = this;
+        this.panels = $('#jobs .panel-body').hide();
+
+        $('#jobs .trigger').click(function() {
+          var $this = $(this);
+
+          _this.panels.slideUp();
+
+          if($this.hasClass('active')){
+            $this.removeClass('active');
+            $('.job').removeClass('active');
+          }else{
+            $('#jobs .trigger').removeClass('active');
+            $('.job').removeClass('active');
+            $this.addClass('active');
+            $this.closest('.job').addClass('active');
+          }
+
+          if($(this).parent().find('.panel-body').css('display') != 'block'){
+            $(this).parent().find('.panel-body').slideDown();
+              return false;
+          }
+          return false;
+        });
+
+      }
+
+    }
+  }());
+
+  HSHC.Timeline = (function () {
+    return {
+
+      init: function () {
+        this.initScrollpane();
+      },
+
+      initScrollpane: function(){
+        $('.scroll-pane').jScrollPane({
+          autoReinitialise: true
+        });
+      }
+
+    }
+  }());  
+
   $( document ).ready(function() {
-    if($('#slider').length > 0){
+    if($('.index').length > 0){
       HSHC.Slider.init();
+      HSHC.Hero.init();
+    }
+
+    if($('#jobs').length > 0){
+      HSHC.Positions.init();
+    }
+
+    if($('#timeline').length > 0){
+      HSHC.Timeline.init();
     }
   });
 
 }(jQuery, this));
+
+//add bind support in donk browsers
+if (!Function.prototype.bind) {
+  Function.prototype.bind = function (oThis) {
+    if (typeof this !== "function") {
+      // closest thing possible to the ECMAScript 5 internal IsCallable function
+      throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");
+    }
+
+    var aArgs = Array.prototype.slice.call(arguments, 1),
+        fToBind = this,
+        fNOP = function () {},
+        fBound = function () {
+          return fToBind.apply(this instanceof fNOP && oThis
+                                 ? this
+                                 : oThis,
+                               aArgs.concat(Array.prototype.slice.call(arguments)));
+        };
+
+    fNOP.prototype = this.prototype;
+    fBound.prototype = new fNOP();
+
+    return fBound;
+  };
+}
 
