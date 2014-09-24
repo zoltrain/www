@@ -2262,10 +2262,27 @@ div.align-center {
   display: inline-block;
   margin-right: 8px;
 }
+.blog #subheader #blogheader-meta .blog-categories li a {
+  -webkit-box-shadow: 2px 2px 0px 1px rgba(0, 140, 232, 0.2);
+  -moz-box-shadow: 2px 2px 0px 1px rgba(0, 140, 232, 0.2);
+  box-shadow: 2px 2px 0px 1px rgba(0, 140, 232, 0.2);
+  -webkit-box-shadow: 2px 2px 0px 1px rgba(0, 140, 232, 0.08);
+  -moz-box-shadow: 2px 2px 0px 1px rgba(0, 140, 232, 0.08);
+  box-shadow: 2px 2px 0px 1px rgba(0, 140, 232, 0.08);
+  -webkit-transition: box-shadow 0.1s ease-in;
+  transition: box-shadow 0.1s ease-in;
+}
 .blog #subheader #blogheader-meta .blog-categories li.active a,
 .blog #subheader #blogheader-meta .blog-categories li:hover a {
   background-color: #48b4fb;
   color: white;
+  -webkit-transition: box-shadow 0.1s ease-in;
+  transition: box-shadow 0.1s ease-in;
+}
+.blog #subheader #blogheader-meta .blog-categories li:hover a {
+  -webkit-box-shadow: 3px 4px 0px 1px rgba(0, 140, 232, 0.15);
+  -moz-box-shadow: 3px 4px 0px 1px rgba(0, 140, 232, 0.15);
+  box-shadow: 3px 4px 0px 1px rgba(0, 140, 232, 0.15);
 }
 .blog #subheader #blogheader-meta .blog-categories li:last-child {
   margin-right: 0;

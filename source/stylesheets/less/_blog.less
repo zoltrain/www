@@ -21,10 +21,22 @@
                     display: inline-block;
                     margin-right: 8px;
 
+                    a{
+                        .btn-blue-blog-boxshadow();
+                        .transition(box-shadow .1s ease-in);
+                    }
+
                     &.active, &:hover{
                         a{
                             background-color: @blue;
                             color: white;
+                            .transition(box-shadow .1s ease-in);
+                        }
+                    }
+
+                    &:hover{
+                        a{
+                            .btn-blue-blog-boxshadow-hover();
                         }
                     }
 
