@@ -541,6 +541,35 @@ h a s h i c o r p
   -webkit-transition: -webkit-transform 1s linear;
   -webkit-transform: translateX(1%);
 }
+.rss.hbtn {
+  padding: 0 20px;
+  margin-left: 8px;
+  color: #ffffff;
+  background: #fb8b48 url(/images/rss-icon.png) center no-repeat;
+  background-image: url("/images/rss-icon.png");
+  background-size: 15px 15px;
+  text-indent: -9999px;
+  white-space: nowrap;
+  -webkit-box-shadow: 2px 2px 0px 1px rgba(251, 139, 72, 0.2);
+  -moz-box-shadow: 2px 2px 0px 1px rgba(251, 139, 72, 0.2);
+  box-shadow: 2px 2px 0px 1px rgba(251, 139, 72, 0.2);
+  -webkit-transition: box-shadow 0.1s ease-in;
+  transition: box-shadow 0.1s ease-in;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .rss.hbtn {
+    background-image: url("/images/rss-icon@2x.png");
+    background-size: 15px 15px;
+  }
+}
+.rss.hbtn:hover {
+  background-color: #151515;
+  -webkit-box-shadow: 3px 4px 0px 1px rgba(251, 139, 72, 0.15);
+  -moz-box-shadow: 3px 4px 0px 1px rgba(251, 139, 72, 0.15);
+  box-shadow: 3px 4px 0px 1px rgba(251, 139, 72, 0.15);
+  -webkit-transition: box-shadow 0.1s ease-in;
+  transition: box-shadow 0.1s ease-in;
+}
 .outline-btn {
   display: inline-block;
   background-color: transparent;

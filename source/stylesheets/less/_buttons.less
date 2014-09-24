@@ -31,6 +31,24 @@
   }
 }
 
+.rss.hbtn{
+    padding: 0 20px;
+    margin-left: 8px;
+    color: @white;
+    background: @orange url(/images/rss-icon.png) center no-repeat;
+    .img-retina("/images/rss-icon.png", "/images/rss-icon@2x.png", 15px, 15px); 
+    text-indent: -9999px;
+    white-space: nowrap;
+    .btn-orange-boxshadow();
+    .transition(box-shadow .1s ease-in);
+
+    &:hover{
+        background-color: @black;
+        .btn-orange-boxshadow-hover();
+        .transition(box-shadow .1s ease-in);
+    }
+}
+
 .outline-btn{
   display: inline-block;
   background-color: transparent;
@@ -178,5 +196,18 @@ a.fill-btn{
   -webkit-box-shadow: 3px 4px 0px 1px rgba(0,140,232,0.15);
   -moz-box-shadow: 3px 4px 0px 1px rgba(0,140,232,0.15);
   box-shadow: 3px 4px 0px 1px rgba(0,140,232,0.15);
+}
+
+
+.btn-orange-boxshadow(){
+  -webkit-box-shadow: 2px 2px 0px 1px rgba(251,139,72,0.2);
+  -moz-box-shadow: 2px 2px 0px 1px rgba(251,139,72,0.2);
+  box-shadow: 2px 2px 0px 1px rgba(251,139,72,0.2);
+}
+
+.btn-orange-boxshadow-hover(){
+  -webkit-box-shadow: 3px 4px 0px 1px rgba(251,139,72,0.15);
+  -moz-box-shadow: 3px 4px 0px 1px rgba(251,139,72,0.15);
+  box-shadow: 3px 4px 0px 1px rgba(251,139,72,0.15);
 }
 
