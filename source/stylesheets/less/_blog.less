@@ -6,7 +6,6 @@
 }
 
 .blog {
-
     #subheader{
         #blogheader-meta{
             background-color: @gray-background;
@@ -108,7 +107,42 @@
     h1 {
         font-size: 50px;
         line-height: 55px;
-        padding-bottom: 30px;
+        padding-bottom: 10px;
+    }
+
+    .meta-wrap{
+        position: relative;
+
+        a{
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        .meta{
+            position: relative;
+            font-size: 12px;
+            @color: @lightgray;
+            text-transform: uppercase;
+            margin-right: 18px;
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 5px;
+                right: -12px;
+                width: 3px;
+                height: 3px;
+                border-radius: 3px;
+                background-color: @lightgray;
+            }
+
+            &.last{
+                &::after{
+                    display: none;
+                }
+            }
+        }        
     }
 
     pre {

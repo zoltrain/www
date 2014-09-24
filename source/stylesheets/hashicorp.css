@@ -2379,7 +2379,32 @@ div.align-center {
 .blog h1 {
   font-size: 50px;
   line-height: 55px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+}
+.blog .meta-wrap {
+  position: relative;
+}
+.blog .meta-wrap a:hover {
+  text-decoration: underline;
+}
+.blog .meta-wrap .meta {
+  position: relative;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 18px;
+}
+.blog .meta-wrap .meta::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: -12px;
+  width: 3px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #6b6b6b;
+}
+.blog .meta-wrap .meta.last::after {
+  display: none;
 }
 .blog pre {
   margin-top: 30px;
