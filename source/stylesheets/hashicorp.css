@@ -270,21 +270,13 @@ h a s h i c o r p
 .offbg {
   background-color: #f7f7f9;
 }
-.translatein {
+.fadein {
   opacity: 0;
-  visibility: hidden;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
-.translatein.in {
+.fadein.in {
   opacity: 1;
-  animation-name: slideDown;
-  -webkit-animation-name: slideDown;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  animation-timing-function: ease;
-  -webkit-animation-timing-function: ease;
-  visibility: visible !important;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }

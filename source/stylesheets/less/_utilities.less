@@ -214,24 +214,12 @@
   background-color: @light-gray-background;
 }
 
-.translatein{
+.fadein{
   opacity: 0;
-  visibility: hidden;
   .transition(all .6s ease-in-out);
 
   &.in{
-    opacity: 1;
-    //.translate(0,0) !important;
-    animation-name: slideDown;
-    -webkit-animation-name: slideDown;  
-
-    animation-duration: 1s; 
-    -webkit-animation-duration: 1s;
-
-    animation-timing-function: ease;  
-    -webkit-animation-timing-function: ease;  
-
-    visibility: visible !important;     
+    opacity: 1;   
     .transition(all .6s ease-in-out);
   }
 
