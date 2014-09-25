@@ -2839,11 +2839,12 @@ body.jobs #positions {
   color: #ffffff;
   box-shadow: -5px -5px 0 1px rgba(0, 0, 0, 0.2);
 }
-body.jobs #positions h3 {
-  font-size: 36px;
+body.jobs #positions h2 {
+  color: #ffffff;
   font-family: "Lato", helvetica, arial, sans-serif;
   font-style: normal;
   font-weight: 400;
+  letter-spacing: 1px;
   text-align: center;
 }
 body.jobs #positions #jobs .job {
@@ -2855,7 +2856,8 @@ body.jobs #positions #jobs .job.active {
 body.jobs #positions #jobs .job h4 {
   font-family: "Lato", helvetica, arial, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: 1px;
   font-size: 20px;
   margin-bottom: 4px;
 }
@@ -2939,6 +2941,10 @@ body.jobs #positions #jobs .job a.trigger.active .toggle {
 }
 body.jobs #positions #jobs .job .panel-body {
   color: #151515;
+}
+body.jobs #positions #jobs .job .panel-body p,
+body.jobs #positions #jobs .job .panel-body ul {
+  font-size: 16px;
 }
 body.jobs #chat {
   color: #151515;
