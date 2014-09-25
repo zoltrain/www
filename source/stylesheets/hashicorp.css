@@ -2444,12 +2444,12 @@ div.align-center {
         }*/
 }
 .page article h2 {
-  margin-bottom: 20px;
+  color: #151515;
   font-size: 42px;
   line-height: 1.1em;
   font-family: "Lato", helvetica, arial, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   text-align: left;
 }
 .page article h3 {
@@ -2507,7 +2507,7 @@ article.support h2,
 article.blog-post h3,
 article.support h3 {
   letter-spacing: 1px;
-  margin: 20px 0;
+  margin: 60px 0 20px;
 }
 article.blog-post .vimeo,
 article.support .vimeo {
