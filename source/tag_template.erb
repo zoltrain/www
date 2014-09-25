@@ -1,0 +1,79 @@
+<section class="blog-landing article-summaries inner-page">
+
+    <!-- page title -->
+    <div id="subheader" class="inner-page-header">
+        <div class="container">
+            <div class="row">
+                <h1 class="headline">Blog</h1>
+            </div> <!--row-->
+        </div> <!--container-->
+
+        <!-- blog meta -->
+        <div id="blogheader-meta" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <ul class="blog-categories">
+                            <li class="active"><a href="#" class="hbtn fill-btn small">All</a></li>
+                            <li><a href="#" class="hbtn fill-btn small">Consul</a></li>
+                            <li><a href="#" class="hbtn fill-btn small">Sysadmin</a></li>
+                            <li><a href="#" class="hbtn fill-btn small">Go</a></li>
+                            <li><a href="#" class="hbtn fill-btn small">Rails</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="pull-right">
+                            <a href="/feed.xml" class="rss hbtn fill-btn small">RSS</a>
+                        </div>
+                        <div class="dropdown pull-right">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">Authors<span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mitchell Hashimoto</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Armon Dadger</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jack Pearkes</a></li>
+                            </ul>
+                        </div> <!--dropdown-->
+                    </div> <!--col-->
+                </div> <!--row-->
+            </div> <!--contrainer-->
+        </div> <!--blogheader-meta-->
+    </div> <!--subheader-->
+
+
+    <div class="container">
+        <% page_articles.each_index do |i| %>
+        <% article = blog.articles[i] %>
+        <article class="right-aligned">
+            <div class="row">
+                <% if article.data.list_image_url %>
+                <!-- post summary content -->
+                <div class="col-md-4 col-sm-12 blog-image">
+                    <%= image_tag article.data.list_image_url, :width => "287", :height => "284" %>
+                </div>  <!-- span -->
+                <div class="col-md-8 col-sm-12">
+                    <h1><a href="<%= article.url %>"><%= article.title %></a></h1>
+                    <div class="meta-wrap">
+                        <span class="meta date"><%= article.date.strftime('%b %e %Y') %></span>
+                        <a href="#" class="meta author">Mitchell Hashimoto</a>
+                        <a href="#" class="meta category last">Consul</a>
+                    </div><!--meta-wrap-->
+                    <p><%= article.summary %></p>
+                    <a class="hbtn outline-btn black small read-more" href="<%= article.url %>">read more</a>
+                </div>  <!-- span -->
+                <% else %>
+                <div class="col-md-8 col-md-offset-2 col-sm-12">
+                    <h1><%= article.title %></h1>
+                    <div class="meta-wrap">
+                        <span class="meta date"><%= article.date.strftime('%b %e %Y') %></span>
+                        <a href="#" class="meta author">Mitchell Hashimoto</a>
+                        <a href="#" class="meta category last">Consul</a>
+                    </div><!--meta-wrap-->
+                    <p><%= article.summary %></p>
+                    <a class="hbtn outline-btn black small read-more" href="<%= article.url %>">read more</a>
+                </div>
+                <% end %>
+            </div>  <!-- row -->
+        </article>
+        <% end %>
+    </div> <!-- container -->
+</section> <!-- blog landing -->

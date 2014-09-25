@@ -13,6 +13,7 @@ activate :blog do |blog|
   blog.layout = "layouts/blog_post"
   blog.permalink = ":title.html"
   blog.prefix = "blog"
+  blog.tag_template = "tag_template.html"
 end
 
 # Build-specific configuration
