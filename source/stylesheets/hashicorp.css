@@ -814,7 +814,7 @@ code {
 }
 pre {
   border: none;
-  font-size: 18px;
+  font-size: 16px;
   background: #151515;
   color: #ffffff;
   padding: 20px;
@@ -2435,6 +2435,13 @@ div.align-center {
 }
 .page article {
   padding: 60px 0;
+  /*ul li, p{
+            color: @paragraph;
+            font-size: 17px;
+            line-height: 1.6em;
+            letter-spacing: 0;
+            margin-bottom: 24px;
+        }*/
 }
 .page article h2 {
   margin-bottom: 20px;
@@ -2450,13 +2457,8 @@ div.align-center {
   font-size: 32px;
   line-height: 1.1em;
 }
-.page article ul li,
-.page article p {
-  color: #6f7c82;
-  font-size: 17px;
-  line-height: 1.6em;
-  letter-spacing: 0;
-  margin-bottom: 24px;
+.page article .meta-wrap {
+  margin-bottom: 20px;
 }
 .pagination {
   height: 80px;
@@ -2482,12 +2484,6 @@ article.support {
 article.blog-post .blog-image,
 article.support .blog-image {
   text-align: center;
-}
-article.blog-post h1,
-article.support h1 {
-  font-size: 50px;
-  margin-bottom: 20px;
-  line-height: 55px;
 }
 article.blog-post img,
 article.support img {
