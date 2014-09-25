@@ -3,6 +3,8 @@ page_title: "Vagrant Cloud: Organizations, Box Hosting and the end of Beta"
 title: "Vagrant Cloud: Organizations, Box Hosting and the end of Beta"
 list_image_url: /images/blog/vagrant-cloud-leaves-beta/logo-side.png
 post_image_url: /images/blog/vagrant-cloud-leaves-beta/header.png
+author: Jack Pearkes
+tags: vagrant-cloud
 ---
 
 Today we take Vagrant Cloud officially out of beta, release
@@ -34,8 +36,8 @@ is also available on the API, allowing you to automate the building and
 uploading of boxes for distribution to your team. Box hosting requires
 an upgraded account. Pricing is detailed below.
 
-- **Custom Shares**. You can now specify custom names and domains. 
-This will let you do something like: `bob.example.com`, routing directly 
+- **Custom Shares**. You can now specify custom names and domains.
+This will let you do something like: `bob.example.com`, routing directly
 to your Vagrant Box while share is running.
 
 ### What Remains Free

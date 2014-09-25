@@ -3,6 +3,8 @@ page_title: "Vagrant Cloud: 5 Weeks In"
 title: "Vagrant Cloud: 5 Weeks In"
 list_image_url: /images/blog/vagrant-cloud-5-weeks-in/logo-side.png
 post_image_url: /images/blog/vagrant-cloud-5-weeks-in/logo-post.png
+author: Jack Pearkes
+tags: vagrant-cloud
 ---
 
 5 weeks after the initial beta release of Vagrant Cloud, we're excited

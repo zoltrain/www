@@ -3,6 +3,8 @@ page_title: A New Look for Vagrant
 title: A New Look for Vagrant
 list_image_url: /images/blog/a-new-look-for-vagrant/logo.png
 post_image_url: /images/blog/a-new-look-for-vagrant/logo_wide.png
+tags: vagrant
+author: Mitchell Hashimoto
 ---
 
 To kick off the new year, [Vagrant](http://www.vagrantup.com) has a brand new look! Vagrant has a new logo for the first time in three years, and the website is redesigned and restructured.

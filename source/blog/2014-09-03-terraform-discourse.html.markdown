@@ -3,6 +3,8 @@ page_title: "Deploying Discourse with Terraform"
 title: "Deploying Discourse with Terraform"
 list_image_url: "/images/blog/terraform-discourse/side.png"
 post_image_url: "/images/blog/terraform-discourse/top.png"
+tags: terraform
+author: Jack Pearkes
 ---
 
 In this blog post, we'll show how Terraform can create a running instance of

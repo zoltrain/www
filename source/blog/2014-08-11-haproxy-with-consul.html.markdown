@@ -1,6 +1,8 @@
 ---
 page_title: "HAProxy with Consul"
 title: "HAProxy with Consul"
+tags: consul
+author: Armon Dadgar
 ---
 
 Consul provides both a DNS and HTTP interface for doing service

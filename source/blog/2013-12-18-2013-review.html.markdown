@@ -1,6 +1,7 @@
 ---
 page_title: "HashiCorp: 2013 in Review"
 title: "HashiCorp: 2013 in Review"
+author: Mitchell Hashimoto
 ---
 
 We're approaching the end of the first full calendar year of HashiCorp,

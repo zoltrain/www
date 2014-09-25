@@ -1,6 +1,8 @@
 ---
 page_title: "VMware Workstation"
 title: "VMware Workstation"
+author: Mitchell Hashimoto
+tags: vagrant
 ---
 
 Today, we're announcing support for [VMware Workstation](http://www.vmware.com/products/workstation/)

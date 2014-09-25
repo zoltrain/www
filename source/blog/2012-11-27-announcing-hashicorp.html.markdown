@@ -1,6 +1,7 @@
 ---
 page_title: Announcing HashiCorp
 title: Announcing HashiCorp
+author: Mitchell Hashimoto
 ---
 
 Today I announce the launch of HashiCorp.  I am [Mitchell Hashimoto](http://twitter.com/mitchellh), the creator and maintainer of [Vagrant](http://vagrantup.com), and I am founding HashiCorp to drive Vagrant's development forward.

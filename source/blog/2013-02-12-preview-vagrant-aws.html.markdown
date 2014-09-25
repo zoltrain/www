@@ -1,6 +1,8 @@
 ---
 page_title: "Preview: Vagrant AWS Provider"
 title: "Preview: Vagrant AWS Provider"
+tags: vagrant
+author: Mitchell Hashimoto
 ---
 
 Sponsored by [Vocalocity](http://www.vocalocity.com/),

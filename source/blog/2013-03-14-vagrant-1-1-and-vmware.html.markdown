@@ -1,6 +1,8 @@
 ---
 page_title: "Vagrant 1.1, VMware Fusion"
 title: "Vagrant 1.1, VMware Fusion"
+author: Mitchell Hashimoto
+tags: vagrant
 ---
 
 I'm happy to announce the release and immediate availability of Vagrant 1.1

@@ -4,6 +4,7 @@ title: "Armon Dadgar Joins HashiCorp"
 list_image_url: /images/blog/armon-joins-hashicorp/face.jpg
 post_image_url: /images/blog/armon-joins-hashicorp/face.jpg
 tags: hiring
+author: Mitchell Hashimoto
 ---
 
 Today is [Armon Dadgar's](https://github.com/armon) first day working at

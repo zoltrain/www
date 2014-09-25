@@ -1,6 +1,8 @@
 ---
 page_title: "Twelve-Factor Applications with Consul"
 title: "Twelve-Factor Applications with Consul"
+author: Armon Dadgar
+tags: consul
 ---
 
 [The Twelve-Factor App](http://12factor.net) says that web applications

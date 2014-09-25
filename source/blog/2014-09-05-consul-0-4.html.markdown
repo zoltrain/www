@@ -4,6 +4,7 @@ title: "Consul 0.4"
 list_image_url: "/images/blog/consul/logo-gradient.png"
 post_image_url: "/images/blog/consul/header.png"
 tags: consul
+author: Armon Dadgar
 ---
 
 Today we are proudly releasing [Consul 0.4](http://www.consul.io).

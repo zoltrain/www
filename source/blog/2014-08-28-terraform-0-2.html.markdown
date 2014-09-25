@@ -3,6 +3,8 @@ page_title: "Terraform 0.2"
 title: "Terraform 0.2"
 list_image_url: "/images/blog/terraform/small.png"
 post_image_url: "/images/blog/terraform/big.png"
+tags: terraform
+author: Mitchell Hashimoto
 ---
 
 We are releasing [Terraform 0.2](http://www.terraform.io). Terraform is

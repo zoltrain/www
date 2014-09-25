@@ -4,15 +4,15 @@
         <div id="blogheader-meta" class="">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-10 col-sm-12">
                         <ul class="blog-categories">
                             <li class="<%= "active" if current_page.data.page_title == "Blog" %>"><a href="/blog.html" class="hbtn fill-btn small">All</a></li>
                             <% blog.tags.each do |tag, articles| %>
-                                    <li class="<%= "active" if current_page.path.include?(tag) %>"><a href="/blog/tags/<%= tag %>.html" class="hbtn fill-btn small"><%= tag %> (<%= articles.size %>)</a></li>
+                                    <li class="<%= "active" if current_page.path.include?("#{tag}.html") %>"><a href="/blog/tags/<%= tag %>.html" class="hbtn fill-btn small"><%= tag %> (<%= articles.size %>)</a></li>
                             <% end %>
                         </ul>
                     </div>
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-2 col-sm-12">
                         <div class="pull-right">
                             <a href="#" class="rss hbtn fill-btn small">RSS</a>
                         </div>

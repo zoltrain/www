@@ -2,6 +2,8 @@
 page_title: "Atomic Multi-Part S3 Uploads with Consul"
 title: "Atomic Multi-Part S3 Uploads with Consul"
 list_image_url: "/images/s3-upload-fail.png"
+author: Armon Dadgar
+tags: consul
 ---
 
 [Vagrant Cloud](https://vagrantcloud.com) is a service provided

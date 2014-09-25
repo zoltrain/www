@@ -3,6 +3,8 @@ page_title: "Terraform"
 title: "Terraform"
 list_image_url: "/images/blog/terraform/small.png"
 post_image_url: "/images/blog/terraform/big.png"
+author: Mitchell Hashimoto
+tags: terraform
 ---
 
 Today we announce [Terraform](http://www.terraform.io), a tool for

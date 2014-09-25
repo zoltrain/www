@@ -3,6 +3,8 @@ page_title: "Automated Pre-Provisioned Development Environments"
 title: "Automated Pre-Provisioned Development Environments"
 list_image_url: /images/blog/automated-environments/side.png
 post_image_url: /images/blog/automated-environments/header.png
+author: Jack Pearkes
+tags: vagrant-cloud, packer
 ---
 
 [Vagrant](http://www.vagrantup.com) was introduced in 2010 to make

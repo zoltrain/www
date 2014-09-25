@@ -3,6 +3,8 @@ page_title: "Jack Pearkes Joins HashiCorp"
 title: "Jack Pearkes Joins HashiCorp"
 list_image_url: /images/blog/jack-joins-hashicorp/face-sidebar.jpg
 post_image_url: /images/blog/jack-joins-hashicorp/post.jpg
+author: Mitchell Hashimoto
+tags: hiring
 ---
 
 Our first announcement for the new year: [Jack Pearkes](https://github.com/pearkes)
