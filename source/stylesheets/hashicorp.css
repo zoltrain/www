@@ -2522,6 +2522,11 @@ article.right-aligned {
 article.support .content {
   padding-top: 50px;
 }
+@media (max-width: 768px) {
+  .blog-landing .blog-image {
+    margin-bottom: 20px;
+  }
+}
 body.about article {
   padding: 120px 0;
 }
