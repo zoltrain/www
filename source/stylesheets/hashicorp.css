@@ -1116,9 +1116,6 @@ body.index #header .navbar-toggle {
 body.index #header .navbar-toggle .icon-bar {
   border-color: #151515;
 }
-body.index #header .nav-white {
-  background-color: rgba(255, 255, 255, 0.9);
-}
 body.index #header .main-links.navbar-nav li > a {
   color: #151515;
 }
@@ -1290,6 +1287,9 @@ body.page-sub #header .main-links.nav > li > a:focus {
   }
 }
 @media (max-width: 768px) {
+  body.index #header .nav-white {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
   #header .collapse {
     margin-top: 0;
   }
