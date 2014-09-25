@@ -7,7 +7,7 @@
                     <div class="col-md-10 col-sm-12">
                         <ul class="blog-categories">
                             <li class="<%= "active" if current_page.data.page_title == "Blog" %>"><a href="/blog.html" class="hbtn fill-btn small">All</a></li>
-                            <% blog.tags.each do |tag, articles| %>
+                            <% blog.tags.sort.each do |tag, articles| %>
                                     <li class="<%= "active" if current_page.path.include?("#{tag}.html") %>"><a href="/blog/tags/<%= tag %>.html" class="hbtn fill-btn small"><%= tag %> (<%= articles.size %>)</a></li>
                             <% end %>
                         </ul>
