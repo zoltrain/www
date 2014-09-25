@@ -3082,11 +3082,11 @@ body.jobs #chat p {
 }
 #timeline #points {
   position: absolute;
-  width: 2440px;
+  width: 2338px;
   left: 30px;
   top: 0;
   margin: 120px 0 ;
-  padding: 120px 0;
+  padding: 120px 40px;
 }
 #timeline #points .point {
   position: relative;
@@ -3275,6 +3275,14 @@ body.jobs #chat p {
   }
   #timeline #points {
     padding: 20px 0 0px;
+  }
+}
+@media (min-width: 2338px) {
+  #timeline #points {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 120px auto;
   }
 }
 footer {
