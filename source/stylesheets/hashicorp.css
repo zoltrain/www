@@ -2469,9 +2469,12 @@ div.align-center {
 .blog article:first-child {
   padding: 40px 0 80px;
 }
+.blog article h2 {
+  font-size: 28px;
+}
 .blog h1 {
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 35px;
+  line-height: 42px;
   padding-bottom: 0;
 }
 .blog img {
