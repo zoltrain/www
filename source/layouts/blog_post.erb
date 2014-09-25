@@ -11,23 +11,21 @@
 				</div>
 			</div>
 			<% end %>
+
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<h1><%= current_article.title %></h1>
-					<div class="meta-wrap">
-						<span class="meta date"><%= current_article.date.strftime('%b %e %Y') %></span>
-						<!-- <a href="#" class="meta author">Mitchell Hashimoto</a>
-						<a href="#" class="meta category last">Consul</a> -->
-					</div><!--meta-wrap-->
+			    <div class="col-md-8 col-md-offset-2">
+					<%= partial "layouts/blog_meta", locals: {article: current_article} %>
+
 					<%= current_article.body %>
 					<div class="row">
-						<div class="col-md-12">
-							<a class="hbtn outline-btn black small pull-right" href="/blog.html">More posts</a>
-						</div>
+					    <div class="col-md-12">
+					        <a class="hbtn outline-btn black small pull-right" href="/blog.html">More posts</a>
+					    </div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</article>
 </section>
+
 <% end %>

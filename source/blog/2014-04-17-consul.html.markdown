@@ -3,6 +3,8 @@ page_title: "Consul"
 title: "Consul"
 list_image_url: "/images/blog/consul/logo-gradient.png"
 post_image_url: "/images/blog/consul/header.png"
+tags: consul
+author: Armon Dadgar
 ---
 
 Today we announce [Consul](http://www.consul.io), a solution for service discovery and

@@ -1,68 +1,29 @@
 ---
 page_title: Blog
 title: Blog
+layout: blog
 ---
 
-<section class="blog-landing article-summaries inner-page">
-
-<!--
-	<div id="subheader" class="inner-page-header">
-		<div id="blogheader-meta" class="">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-sm-12">
-						<ul class="blog-categories">
-							<li class="active"><a href="#" class="hbtn fill-btn small">All</a></li>
-							<li><a href="#" class="hbtn fill-btn small">Consul</a></li>
-							<li><a href="#" class="hbtn fill-btn small">Sysadmin</a></li>
-							<li><a href="#" class="hbtn fill-btn small">Go</a></li>
-							<li><a href="#" class="hbtn fill-btn small">Rails</a></li>
-						</ul>
-					</div>
-					<div class="col-md-6 col-sm-12">
-						<div class="pull-right">
-							<a href="#" class="rss hbtn fill-btn small">RSS</a>
-						</div>
-						<div class="dropdown pull-right">
-							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">Authors<span class="caret"></span></button>
-							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mitchell Hashimoto</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Armon Dadger</a></li>
-								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jack Pearkes</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+<div class="container">
+	<div class="col-md-11">
+		<% blog.articles.each_index do |i| %>
+		<% article = blog.articles[i] %>
+		<article class="right-aligned">
+			<div class="row">
+				<!-- post summary content -->
+				<div class="col-md-4 col-sm-12 blog-image">
+					<% if article.data.list_image_url %>
+						<%= image_tag article.data.list_image_url, :width => "287", :height => "284" %>
+					<% end %>
+				</div>	<!-- span -->
+				<div class="col-md-8 col-sm-12">
+					<%= partial "layouts/blog_meta", locals: {article: article} %>
+					<p><%= article.summary %></p>
+					<a class="hbtn outline-btn black small read-more" href="<%= article.url %>">read more</a>
+				</div>	<!-- span -->
+			</div>	<!-- row -->
+		</article>
+		<% end %>
 	</div>
- -->
+</div> <!-- container -->
 
-	<div class="container">
-		<div class="col-md-11">
-			<% blog.articles.each_index do |i| %>
-			<% article = blog.articles[i] %>
-			<article class="right-aligned">
-				<div class="row">
-					<!-- post summary content -->
-					<div class="col-md-4 col-sm-12 blog-image">
-						<% if article.data.list_image_url %>
-							<%= image_tag article.data.list_image_url, :width => "287", :height => "284" %>
-						<% end %>
-					</div>	<!-- span -->
-					<div class="col-md-8 col-sm-12">
-						<h1><a href="<%= article.url %>"><%= article.title %></a></h1>
-						<div class="meta-wrap">
-							<span class="meta date"><%= article.date.strftime('%b %e %Y') %></span>
-	<!-- 						<a href="#" class="meta author">Mitchell Hashimoto</a>
-							<a href="#" class="meta category last">Consul</a>
-	 -->					</div><!--meta-wrap-->
-						<p><%= article.summary %></p>
-						<a class="hbtn outline-btn black small read-more" href="<%= article.url %>">read more</a>
-					</div>	<!-- span -->
-				</div>	<!-- row -->
-			</article>
-			<% end %>
-		</div>
-	</div> <!-- container -->
-</section> <!-- blog landing -->
