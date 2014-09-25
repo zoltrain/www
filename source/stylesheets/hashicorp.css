@@ -2492,6 +2492,9 @@ div.align-center {
   margin-right: 18px;
   color: #959595;
 }
+.blog .meta-wrap .meta.meta-tag {
+  margin-right: 0px;
+}
 .blog .meta-wrap .meta::after {
   content: '';
   position: absolute;
