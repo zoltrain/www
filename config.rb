@@ -22,7 +22,6 @@ configure :build do
     "images/products-sprite.png",
     "images/products-sprite@2x.png",
   ]
-  activate :minify_css
   activate :minify_html, remove_http_protocol: false
   activate :minify_javascript
 
