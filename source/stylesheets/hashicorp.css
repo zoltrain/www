@@ -1358,15 +1358,16 @@ body.page-sub #header .main-links.nav > li > a:focus {
 #jumbotron #jumbotron-content .jumbo-logo {
   position: relative;
   padding-top: 20px;
-  /*.hero-harmony{
-        position: absolute;
-        top: 99px;
-        left: 87px;
-        width: 66px;
-        height: 65px;        
-        background: url(/images/harmony-hero-logo.png) 0 0 no-repeat;
-        .img-retina("/images/harmony-hero-logo.png", "/images/harmony-hero-logo@2x.png", 66px, 65px);        
-      } */
+  /* .hero-harmony {
+                position: absolute;
+                top: 99px;
+                left: 87px;
+                width: 66px;
+                height: 65px;
+                background: url(/images/harmony-hero-logo.png) 0 0 no-repeat;
+                .img-retina("/images/harmony-hero-logo.png", "/images/harmony-hero-logo@2x.png", 66px, 65px);
+            }
+            */
 }
 #jumbotron #jumbotron-content .jumbo-logo .hero-logo {
   position: absolute;
