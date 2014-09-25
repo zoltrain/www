@@ -276,6 +276,31 @@ hr {
 }
 
 
+.page {
+    article {
+        padding: 60px 0;
+
+        h2{
+            margin-bottom: @baseline;
+            color: @black;
+            font-size: 42px;
+            line-height: 1.1em;
+            .lato-bold;
+            text-align: left;
+        }
+
+        h3{
+            margin-bottom: 20px;
+            font-size: 32px;
+            line-height: 1.1em;
+        }
+
+        .meta-wrap{
+            margin-bottom: @baseline;
+        }
+    }
+}
+
 //keep subheader padding minimal on macbooks 13inch and below
 @media (max-width: 1281px) {
     .inner-page .inner-page-header h1{

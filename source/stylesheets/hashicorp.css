@@ -922,6 +922,27 @@ pre span {
   line-height: 36px;
   margin: 50px 0;
 }
+.page article {
+  padding: 60px 0;
+}
+.page article h2 {
+  margin-bottom: 20px;
+  color: #151515;
+  font-size: 42px;
+  line-height: 1.1em;
+  font-family: "Lato", helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+}
+.page article h3 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  line-height: 1.1em;
+}
+.page article .meta-wrap {
+  margin-bottom: 20px;
+}
 @media (max-width: 1281px) {
   .inner-page .inner-page-header h1 {
     padding: 0 0 27px 15px;
@@ -2433,33 +2454,6 @@ div.align-center {
 .blog a.read-more {
   margin-top: 20px;
 }
-.page article {
-  padding: 60px 0;
-  /*ul li, p{
-            color: @paragraph;
-            font-size: 17px;
-            line-height: 1.6em;
-            letter-spacing: 0;
-            margin-bottom: 24px;
-        }*/
-}
-.page article h2 {
-  color: #151515;
-  font-size: 42px;
-  line-height: 1.1em;
-  font-family: "Lato", helvetica, arial, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  text-align: left;
-}
-.page article h3 {
-  margin-bottom: 20px;
-  font-size: 32px;
-  line-height: 1.1em;
-}
-.page article .meta-wrap {
-  margin-bottom: 20px;
-}
 .pagination {
   height: 80px;
   background-color: #f6f7fb;
@@ -2530,6 +2524,9 @@ article.support .content {
 body.about article {
   padding: 120px 0;
 }
+body.about .history {
+  padding-top: 80px;
+}
 body.about .team h2 {
   margin-bottom: 40px;
 }
@@ -2538,7 +2535,7 @@ body.about .team img {
   max-width: 100%;
   height: auto;
   font-size: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 body.about .team h4 {
   margin-bottom: 10px;
@@ -2547,9 +2544,9 @@ body.about .team h4 {
   color: #151515;
 }
 body.about .team p {
-  margin-bottom: 5px;
-  font-size: 16px;
-  line-height: 1.4em;
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.5em;
 }
 body.about .team .twitter-about {
   display: inline-block;
@@ -3035,7 +3032,7 @@ body.jobs #chat p {
 }
 #timeline #points {
   position: absolute;
-  width: 1440px;
+  width: 2440px;
   left: 30px;
   top: 0;
   margin: 120px 0 ;
