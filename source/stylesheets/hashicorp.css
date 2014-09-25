@@ -721,7 +721,7 @@ h6 {
   font-weight: 700;
 }
 h1 {
-  color: #ffffff;
+  color: #151515;
   font-size: 70px;
   line-height: 80px;
   letter-spacing: 1px;
@@ -1279,6 +1279,7 @@ body.page-sub #header .main-links.nav > li > a:focus {
 }
 #jumbotron #jumbotron-content .hero-headline h1 {
   margin-top: 202px;
+  color: #ffffff;
   font-size: 32px;
   line-height: 36px;
   font-family: "Lato", helvetica, arial, sans-serif;
