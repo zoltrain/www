@@ -7,16 +7,12 @@ html {
 }
 
 body {
-  font-size: @base-font-size;
-  line-height: @base-line-height;
-  color: @black;
-  background-color: @white;
-  .lato-regular();
+    font-size: @base-font-size;
+    line-height: @base-line-height;
+    color: @dark-text;
+    background-color: @white;
+    .lato-regular();
 }
-
-/*.wrapper {
-margin-top: 80px;
-}*/
 
 i{
 	display: inline-block;
@@ -28,70 +24,68 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
-  padding: 0;
-  color: inherit;
-  text-rendering: optimizelegibility;
-  .lato-bold();
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    text-rendering: optimizelegibility;
+    .lato-bold();
 }
 
-	h1 {
-	  @font-size: 70px;
-	  font-size: @font-size;
-	  line-height: 80px;
-	  letter-spacing: 1px;
+h1 {
+    color: @white;
+    @font-size: 70px;
+    font-size: @font-size;
+    line-height: 80px;
+    letter-spacing: 1px;
 
-	  	span {
-	  	font-size: @headline-span-size;
-	  	display: block;
-	  	}
-	}
+    span {
+        font-size: @headline-span-size;
+        display: block;
+    }
+}
 
-	h2 {
-	  @font-size: 30px;
-	  font-size: @font-size;
-	  line-height: @font-size;
-	}
+h2 {
+    @font-size: 30px;
+    font-size: @font-size;
+    line-height: @font-size;
+}
 
-	h3 {
-	  @font-size: 30px;
-	  font-size: @font-size;
-	  line-height: @font-size;
-	}
+h3 {
+    @font-size: 30px;
+    font-size: @font-size;
+    line-height: @font-size;
+}
 
-	h4 {
-	  @font-size: 24px;
-	  font-size: @font-size;
-	  line-height: @font-size;
-	}
+h4 {
+    @font-size: 24px;
+    font-size: @font-size;
+    line-height: @font-size;
+}
 
-	h5 {
-	  @font-size: 20px;
-	  font-size: @font-size;
-	  line-height: @font-size;
-	}
+h5 {
+    @font-size: 20px;
+    font-size: @font-size;
+    line-height: @font-size;
+}
 
-	h6 {
-	  @font-size: 12px;
-	  font-size: @font-size;
-	  line-height: @font-size;
-	}
+h6 {
+    @font-size: 12px;
+    font-size: @font-size;
+    line-height: @font-size;
+}
 
 p, ul, ol {
-	// letter-spacing: 0.3px;
-	line-height: 32px;
+    font-size: @base-font-size;
+    line-height: @base-line-height;
+    margin-bottom: @baseline;
 
-	a {
-	color: @blue;
-	//text-decoration: none;
-	//border-bottom: 1px solid @green;
+    a {
+       color: @blue;
 
-		&:hover {
-		//text-decoration: none;
-		//color: darken(@green, 10%);
-		//border-bottom: 1px solid darken(@green, 10%);
-		}
-	}
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 a, ul.unstyled a {
@@ -104,34 +98,26 @@ a, ul.unstyled a {
 		text-decoration: none;
 		color: @blue;
 
-	.animate-text-color
-	}
+       .animate-text-color
+   }
 
-	&:active {
+   &:active {
 
-	}
+   }
 
-	&:visited {
+   &:visited {
 
-	}
-}
-
-ul {
-
-}
-
-li {
-	line-height: @base-line-height + 5;
+   }
 }
 
 blockquote {
 	border: none;
-  margin: 60px;
+    margin: 60px;
 
-  p { // blockquote p
-		font-size: @base-font-size * 2;
-		line-height: @base-line-height * 2;
-		font-style: italic;
+  p {
+    font-size: @base-font-size * 2;
+    line-height: @base-line-height * 2;
+    font-style: italic;
   }
 }
 
@@ -188,9 +174,9 @@ hr {
 .meta,
 .legal,
 .date {
-color: @medium-gray-text;
-line-height: @base-line-height;
-	.lato-regular();
+    color: @medium-gray-text;
+    line-height: @base-line-height;
+    .lato-regular();
 }
 
 .date {
@@ -208,17 +194,17 @@ line-height: @base-line-height;
 
 	span {
 	// button text styles can go here
-	}
+}
 
-	&:hover {
-		background-color: darken(@button-color, 7%);
+&:hover {
+  background-color: darken(@button-color, 7%);
 
-	.animate-background-color;
-	}
+  .animate-background-color;
+}
 
-	&.disabled {
-		background-color: @light-gray-background;
-	}
+&.disabled {
+  background-color: @light-gray-background;
+}
 
 }
 
@@ -258,6 +244,7 @@ line-height: @base-line-height;
         color: @white;
 
         h1 {
+            color: @white;
             padding: 64px 0 54px 15px;
             font-size: 52px;
             line-height: 1.1em;

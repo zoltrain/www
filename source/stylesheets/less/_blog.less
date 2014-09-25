@@ -64,6 +64,7 @@
             .blog-categories{
                 list-style-type: none;
                 padding-left: 0;
+                margin-bottom: 0;
 
                 li{
                     display: inline-block;
@@ -107,7 +108,12 @@
     h1 {
         font-size: 50px;
         line-height: 55px;
-        padding-bottom: 10px;
+        padding-bottom: 0;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
     }
 
     .meta-wrap{
@@ -116,15 +122,16 @@
         a{
             &:hover{
                 text-decoration: underline;
+                color: @blue;
             }
         }
 
         .meta{
             position: relative;
             font-size: 12px;
-            @color: @lightgray;
             text-transform: uppercase;
             margin-right: 18px;
+            color: @light-gray-text;
 
             &::after{
                 content: '';

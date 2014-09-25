@@ -537,9 +537,8 @@ h a s h i c o r p
 .hbtn.small.outline-btn {
   line-height: 24px;
 }
-.hbtn::hover .hcaret {
-  -webkit-transition: -webkit-transform 1s linear;
-  -webkit-transform: translateX(1%);
+.hbtn:hover {
+  text-decoration: none;
 }
 .rss.hbtn {
   padding: 0 20px;
@@ -697,16 +696,13 @@ html {
 }
 body {
   font-size: 18px;
-  line-height: 30px;
-  color: #151515;
+  line-height: 1.5em;
+  color: #38434a;
   background-color: #ffffff;
   font-family: "Lato", helvetica, arial, sans-serif;
   font-style: normal;
   font-weight: 400;
 }
-/*.wrapper {
-margin-top: 80px;
-}*/
 i {
   display: inline-block;
 }
@@ -725,6 +721,7 @@ h6 {
   font-weight: 700;
 }
 h1 {
+  color: #ffffff;
   font-size: 70px;
   line-height: 80px;
   letter-spacing: 1px;
@@ -756,12 +753,19 @@ h6 {
 p,
 ul,
 ol {
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin-bottom: 20px;
 }
 p a,
 ul a,
 ol a {
   color: #48b4fb;
+}
+p a:hover,
+ul a:hover,
+ol a:hover {
+  text-decoration: underline;
 }
 a,
 ul.unstyled a {
@@ -778,16 +782,13 @@ ul.unstyled a:hover {
   -webkit-transition: color 0.2s ease-in-out;
   -o-transition: color 0.2s ease-in-out;
 }
-li {
-  line-height: 35px;
-}
 blockquote {
   border: none;
   margin: 60px;
 }
 blockquote p {
   font-size: 36px;
-  line-height: 60px;
+  line-height: 3em;
   font-style: italic;
 }
 strong {
@@ -802,7 +803,7 @@ em {
 }
 br {
   display: block;
-  margin-top: 30px;
+  margin-top: 1.5em;
 }
 pre,
 code {
@@ -818,7 +819,7 @@ pre {
   color: #ffffff;
   padding: 20px;
   letter-spacing: normal;
-  line-height: 30px;
+  line-height: 1.5em;
 }
 pre span {
   color: #73c5dd;
@@ -832,7 +833,7 @@ pre span {
 .legal,
 .date {
   color: #666666;
-  line-height: 30px;
+  line-height: 1.5em;
   font-family: "Lato", helvetica, arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -897,6 +898,7 @@ pre span {
   color: #ffffff;
 }
 .inner-page .inner-page-header h1 {
+  color: #ffffff;
   padding: 64px 0 54px 15px;
   font-size: 52px;
   line-height: 1.1em;
@@ -2340,6 +2342,7 @@ div.align-center {
 .blog #subheader #blogheader-meta .blog-categories {
   list-style-type: none;
   padding-left: 0;
+  margin-bottom: 0;
 }
 .blog #subheader #blogheader-meta .blog-categories li {
   display: inline-block;
@@ -2379,19 +2382,25 @@ div.align-center {
 .blog h1 {
   font-size: 50px;
   line-height: 55px;
-  padding-bottom: 10px;
+  padding-bottom: 0;
+}
+.blog img {
+  max-width: 100%;
+  height: auto;
 }
 .blog .meta-wrap {
   position: relative;
 }
 .blog .meta-wrap a:hover {
   text-decoration: underline;
+  color: #48b4fb;
 }
 .blog .meta-wrap .meta {
   position: relative;
   font-size: 12px;
   text-transform: uppercase;
   margin-right: 18px;
+  color: #959595;
 }
 .blog .meta-wrap .meta::after {
   content: '';
@@ -2407,7 +2416,7 @@ div.align-center {
   display: none;
 }
 .blog pre {
-  margin-top: 30px;
+  margin-top: 1.5em;
 }
 .blog .big-background {
   background-color: #151515 !important;
