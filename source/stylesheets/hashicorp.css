@@ -740,12 +740,14 @@ html {
 }
 body {
   font-size: 18px;
-  line-height: 1.5em;
-  color: #38434a;
+  line-height: 1.55em;
+  color: #343434;
   background-color: #ffffff;
   font-family: "Lato", helvetica, arial, sans-serif;
   font-style: normal;
   font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 i {
   display: inline-block;
@@ -798,7 +800,7 @@ p,
 ul,
 ol {
   font-size: 18px;
-  line-height: 1.5em;
+  line-height: 1.55em;
   margin-bottom: 20px;
 }
 p a {
@@ -828,7 +830,7 @@ blockquote {
 }
 blockquote p {
   font-size: 36px;
-  line-height: 3em;
+  line-height: 3.1em;
   font-style: italic;
 }
 strong {
@@ -843,7 +845,7 @@ em {
 }
 br {
   display: block;
-  margin-top: 1.5em;
+  margin-top: 1.55em;
 }
 pre,
 code {
@@ -859,7 +861,7 @@ pre {
   color: #ffffff;
   padding: 20px;
   letter-spacing: normal;
-  line-height: 1.5em;
+  line-height: 1.55em;
 }
 pre span {
   color: #73c5dd;
@@ -873,7 +875,7 @@ pre span {
 .legal,
 .date {
   color: #666666;
-  line-height: 1.5em;
+  line-height: 1.55em;
   font-family: "Lato", helvetica, arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -939,7 +941,7 @@ pre span {
 }
 .inner-page .inner-page-header h1 {
   color: #ffffff;
-  padding: 64px 0 54px 15px;
+  padding: 25px 0 54px 15px;
   font-size: 52px;
   line-height: 1.1em;
   font-family: "Lato", helvetica, arial, sans-serif;
@@ -1681,7 +1683,7 @@ div.align-center {
   color: #f1f1f1;
   font-family: "Lato", helvetica, arial, sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 #news .blog-entry-left .cont-read {
@@ -2143,10 +2145,10 @@ div.align-center {
   margin: 0 auto;
 }
 #products #products-display .descs p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-  opacity: .8;
   margin-bottom: 25px;
 }
 #products #products-display .descs .outline-btn {
@@ -2504,7 +2506,7 @@ div.align-center {
   display: none;
 }
 .blog pre {
-  margin-top: 1.5em;
+  margin-top: 1.55em;
 }
 .blog .big-background {
   background-color: #151515 !important;
@@ -2669,7 +2671,7 @@ body.about .quotes .quotes .quote p {
   font-weight: 300;
 }
 body.about .quotes .quotes .temp-big p {
-  font-size: 20px;
+  font-size: 28px;
 }
 body.about .quotes .quotes .q1 i {
   width: 186px;
