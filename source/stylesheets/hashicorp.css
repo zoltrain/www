@@ -1733,10 +1733,10 @@ div.align-center {
   background-color: #dd4e58;
 }
 #products.consul {
-  background-color: #9061fb;
+  background-color: #69499a;
 }
 #products.terraform {
-  background-color: #202020;
+  background-color: #822ff7;
 }
 #products #products-header {
   position: relative;
@@ -1769,6 +1769,7 @@ div.align-center {
 }
 #products #products-nav li.active a,
 #products #products-nav li:hover a {
+  text-decoration: none;
   background-position: center 0 !important;
 }
 #products #products-nav li.active a span,
@@ -1965,10 +1966,10 @@ div.align-center {
   background-color: #dd4e58;
 }
 #products #products-display.consul {
-  background-color: #9061fb;
+  background-color: #69499a;
 }
 #products #products-display.terraform {
-  background-color: #202020;
+  background-color: #822ff7;
 }
 #products #products-display .harmony .product-logo {
   background: url(/images/product-harmony.png) 0 0 no-repeat;
@@ -2007,7 +2008,7 @@ div.align-center {
   }
 }
 #products #products-display .consul .fill-btn {
-  color: #9061fb;
+  color: #69499a;
 }
 #products #products-display .consul .black-caret-right {
   background: url(/images/consul-caret-right.png) 0 0 no-repeat;
@@ -2063,7 +2064,7 @@ div.align-center {
   }
 }
 #products #products-display .terraform .fill-btn {
-  color: #202020;
+  color: #822ff7;
 }
 #products #products-display .serf .product-logo {
   background: url(/images/product-serf.png) 0 0 no-repeat;
@@ -2638,7 +2639,6 @@ body.about .team .row.team-3 {
   margin-top: 40px;
 }
 body.about .quotes .quotes .quote i {
-  height: 64px;
   margin-bottom: 10px;
 }
 body.about .quotes .quotes .quote p {
