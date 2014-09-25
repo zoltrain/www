@@ -1542,8 +1542,8 @@ article p {
   -moz-hyphens: auto;
   hyphens: auto;
 }
-section.hiring,
-section.customers {
+article.hiring,
+article.customers {
   padding: 120px 0;
 }
 div.align-center {
