@@ -201,6 +201,17 @@ h a s h i c o r p
     background-size: 27px 40px;
   }
 }
+.timeline-armon {
+  background: url(/images/time-armon.png) 0 0 no-repeat;
+  background-image: url("/images/time-armon.png");
+  background-size: 55px 58px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .timeline-armon {
+    background-image: url("/images/time-armon@2x.png");
+    background-size: 55px 58px;
+  }
+}
 .hashicorp-icon {
   background: url(/images/hashicorp-medium.png) 0 0 no-repeat;
   background-image: url("/images/hashicorp-medium.png");
@@ -254,6 +265,39 @@ h a s h i c o r p
   .timeline-packer {
     background-image: url("/images/time-packer@2x.png");
     background-size: 38px 56px;
+  }
+}
+.timeline-consul {
+  background: url(/images/time-consul.png) 0 0 no-repeat;
+  background-image: url("/images/time-consul.png");
+  background-size: 57px 56px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .timeline-consul {
+    background-image: url("/images/time-consul@2x.png");
+    background-size: 57px 56px;
+  }
+}
+.timeline-cloud {
+  background: url(/images/time-cloud.png) 0 3px no-repeat;
+  background-image: url("/images/time-cloud.png");
+  background-size: 58px 41px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .timeline-cloud {
+    background-image: url("/images/time-cloud@2x.png");
+    background-size: 58px 41px;
+  }
+}
+.timeline-terraform {
+  background: url(/images/time-terraform.png) 0 0 no-repeat;
+  background-image: url("/images/time-terraform.png");
+  background-size: 51px 57px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .timeline-terraform {
+    background-image: url("/images/time-terraform@2x.png");
+    background-size: 51px 57px;
   }
 }
 .twitter-about {
@@ -1902,7 +1946,7 @@ div.align-center {
 #products #products-display {
   width: 100%;
   padding: 130px 0;
-  background-color: #9061fb;
+  background-color: #2f88f7;
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.25, 0.75, 0.75);
   transition: all 0.3s cubic-bezier(0.25, 0.25, 0.75, 0.75);
   margin-top: -5px;
@@ -2057,7 +2101,7 @@ div.align-center {
   }
 }
 #products #products-display .vagrant .fill-btn {
-  color: #0094bf;
+  color: #2f88f7;
 }
 #products #products-display .vagrant .black-caret-right {
   background: url(/images/vagrant-caret-right.png) 0 0 no-repeat;
@@ -3121,14 +3165,25 @@ body.jobs #chat p {
   }
 }
 #timeline #points .point .body i.consul {
-  background: url(/images/nav-consul.png) 0 0 no-repeat;
-  background-image: url("/images/nav-consul.png");
-  background-size: 41px 40px;
+  background: url(/images/time-consul.png) 0 0 no-repeat;
+  background-image: url("/images/time-consul.png");
+  background-size: 57px 56px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #timeline #points .point .body i.consul {
-    background-image: url("/images/nav-consul@2x.png");
-    background-size: 41px 40px;
+    background-image: url("/images/time-consul@2x.png");
+    background-size: 57px 56px;
+  }
+}
+#timeline #points .point .body i.armon {
+  background: url(/images/time-armon.png) 0 0 no-repeat;
+  background-image: url("/images/time-armon.png");
+  background-size: 55px 58px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #timeline #points .point .body i.armon {
+    background-image: url("/images/time-armon@2x.png");
+    background-size: 55px 58px;
   }
 }
 #timeline #points .point .body i.packer {
@@ -3143,14 +3198,14 @@ body.jobs #chat p {
   }
 }
 #timeline #points .point .body i.terraform {
-  background: url(/images/nav-terraform.png) 0 0 no-repeat;
-  background-image: url("/images/nav-terraform.png");
-  background-size: 36px 40px;
+  background: url(/images/time-terraform.png) 0 0 no-repeat;
+  background-image: url("/images/time-terraform.png");
+  background-size: 51px 57px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #timeline #points .point .body i.terraform {
-    background-image: url("/images/nav-terraform@2x.png");
-    background-size: 36px 40px;
+    background-image: url("/images/time-terraform@2x.png");
+    background-size: 51px 57px;
   }
 }
 #timeline #points .point .body i.serf {
@@ -3173,6 +3228,17 @@ body.jobs #chat p {
   #timeline #points .point .body i.vagrant {
     background-image: url("/images/time-vagrant@2x.png");
     background-size: 61px 56px;
+  }
+}
+#timeline #points .point .body i.cloud {
+  background: url(/images/time-cloud.png) 0 3px no-repeat;
+  background-image: url("/images/time-cloud.png");
+  background-size: 58px 41px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #timeline #points .point .body i.cloud {
+    background-image: url("/images/time-cloud@2x.png");
+    background-size: 58px 41px;
   }
 }
 #timeline #points .point .body .line {
