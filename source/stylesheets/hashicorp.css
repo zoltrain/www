@@ -1106,23 +1106,29 @@ pre span {
 #header .buttons.navbar-nav li.first {
   margin-right: 13px;
 }
-body.index #header {
+body.index #header,
+body.blog #header {
   background-color: #ffffff;
 }
-body.index #header .navbar-toggle {
+body.index #header .navbar-toggle,
+body.blog #header .navbar-toggle {
   background-color: #ffffff;
   border-color: #151515;
 }
-body.index #header .navbar-toggle .icon-bar {
+body.index #header .navbar-toggle .icon-bar,
+body.blog #header .navbar-toggle .icon-bar {
   border-color: #151515;
 }
-body.index #header .main-links.navbar-nav li > a {
+body.index #header .main-links.navbar-nav li > a,
+body.blog #header .main-links.navbar-nav li > a {
   color: #151515;
 }
-body.index #header .main-links.navbar-nav li > a:hover {
+body.index #header .main-links.navbar-nav li > a:hover,
+body.blog #header .main-links.navbar-nav li > a:hover {
   color: #48b4fb;
 }
-body.index #header .buttons.navbar-nav .fill-btn {
+body.index #header .buttons.navbar-nav .fill-btn,
+body.blog #header .buttons.navbar-nav .fill-btn {
   color: #ffffff;
   background-color: #48b4fb !important;
   -webkit-box-shadow: 2px 2px 0px 1px rgba(0, 140, 232, 0.2);
@@ -1134,7 +1140,8 @@ body.index #header .buttons.navbar-nav .fill-btn {
   background-image: url("../images/harmony-mini.png");
   background-size: 19px 19px;
 }
-body.index #header .buttons.navbar-nav .fill-btn:hover {
+body.index #header .buttons.navbar-nav .fill-btn:hover,
+body.blog #header .buttons.navbar-nav .fill-btn:hover {
   -webkit-box-shadow: 4px 6px 0px 1px rgba(0, 140, 232, 0.15);
   -moz-box-shadow: 4px 6px 0px 1px rgba(0, 140, 232, 0.15);
   box-shadow: 4px 6px 0px 1px rgba(0, 140, 232, 0.15);
@@ -1142,12 +1149,14 @@ body.index #header .buttons.navbar-nav .fill-btn:hover {
   transition: all 0.3s ease-in-out;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  body.index #header .buttons.navbar-nav .fill-btn {
+  body.index #header .buttons.navbar-nav .fill-btn,
+  body.blog #header .buttons.navbar-nav .fill-btn {
     background-image: url("../images/harmony-mini@2x.png");
     background-size: 19px 19px;
   }
 }
-body.index #header .buttons.navbar-nav .black-caret-right {
+body.index #header .buttons.navbar-nav .black-caret-right,
+body.blog #header .buttons.navbar-nav .black-caret-right {
   display: inline-block;
   width: 10px;
   height: 15px;
@@ -1157,24 +1166,28 @@ body.index #header .buttons.navbar-nav .black-caret-right {
   background-size: 10px 15px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  body.index #header .buttons.navbar-nav .black-caret-right {
+  body.index #header .buttons.navbar-nav .black-caret-right,
+  body.blog #header .buttons.navbar-nav .black-caret-right {
     background-image: url("/images/light-caret-right@2x.png");
     background-size: 10px 15px;
   }
 }
-body.index #header .buttons.navbar-nav .black-caret-right.small {
+body.index #header .buttons.navbar-nav .black-caret-right.small,
+body.blog #header .buttons.navbar-nav .black-caret-right.small {
   width: 6px;
   height: 9px;
   margin-left: 6px;
   background-size: 6px 9px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  body.index #header .buttons.navbar-nav .black-caret-right {
+  body.index #header .buttons.navbar-nav .black-caret-right,
+  body.blog #header .buttons.navbar-nav .black-caret-right {
     background-image: url("/images/light-caret-right@2x.png");
     background-size: 10px 15px;
   }
 }
-body.index #header .buttons.navbar-nav .black-caret-right.small {
+body.index #header .buttons.navbar-nav .black-caret-right.small,
+body.blog #header .buttons.navbar-nav .black-caret-right.small {
   width: 6px;
   height: 9px;
   margin-left: 6px;
@@ -1287,7 +1300,8 @@ body.page-sub #header .main-links.nav > li > a:focus {
   }
 }
 @media (max-width: 768px) {
-  body.index #header .nav-white {
+  body.index #header .nav-white,
+  body.blog #header .nav-white {
     background-color: rgba(255, 255, 255, 0.9);
   }
   #header .collapse {
