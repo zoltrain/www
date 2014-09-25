@@ -50,10 +50,11 @@ title: Blog
 		<% article = blog.articles[i] %>
 		<article class="right-aligned">
 			<div class="row">
-				<% if article.data.list_image_url %>
 				<!-- post summary content -->
 				<div class="col-md-4 col-sm-12 blog-image">
-					<%= image_tag article.data.list_image_url, :width => "287", :height => "284" %>
+					<% if article.data.list_image_url %>
+						<%= image_tag article.data.list_image_url, :width => "287", :height => "284" %>
+					<% end %>
 				</div>	<!-- span -->
 				<div class="col-md-8 col-sm-12">
 					<h1><a href="<%= article.url %>"><%= article.title %></a></h1>
@@ -65,18 +66,6 @@ title: Blog
 					<p><%= article.summary %></p>
 					<a class="hbtn outline-btn black small read-more" href="<%= article.url %>">read more</a>
 				</div>	<!-- span -->
-				<% else %>
-				<div class="col-md-8 col-md-offset-2 col-sm-12">
-					<h1><%= article.title %></h1>
-					<div class="meta-wrap">
-						<span class="meta date"><%= article.date.strftime('%b %e %Y') %></span>
-						<a href="#" class="meta author">Mitchell Hashimoto</a>
-						<a href="#" class="meta category last">Consul</a>
-					</div><!--meta-wrap-->
-					<p><%= article.summary %></p>
-					<a class="hbtn outline-btn black small read-more" href="<%= article.url %>">read more</a>
-				</div>
-				<% end %>
 			</div>	<!-- row -->
 		</article>
 		<% end %>
