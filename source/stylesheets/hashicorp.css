@@ -1113,6 +1113,16 @@ pre span {
 body.index #header {
   background-color: #ffffff;
 }
+body.index #header .navbar-toggle {
+  background-color: #ffffff;
+  border-color: #151515;
+}
+body.index #header .navbar-toggle .icon-bar {
+  border-color: #151515;
+}
+body.index #header .nav-white {
+  background-color: rgba(255, 255, 255, 0.9);
+}
 body.index #header .main-links.navbar-nav li > a {
   color: #151515;
 }
