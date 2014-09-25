@@ -10,6 +10,7 @@ gem "therubyracer", "~> 0.12.0"
 gem "thin", "~> 1.5.0"
 gem "nokogiri"
 gem 'rack-ssl-enforcer', '~> 0.2.8'
+gem 'rack-rewrite', '~> 1.5.0'
 
 group :development do
   gem "highline", "~> 1.6.15"

@@ -81,6 +81,7 @@ GEM
     rack (1.5.2)
     rack-contrib (1.1.0)
       rack (>= 0.9.1)
+    rack-rewrite (1.5.0)
     rack-ssl-enforcer (0.2.8)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -127,6 +128,7 @@ DEPENDENCIES
   middleman-minify-html (~> 3.1.1)
   nokogiri
   rack-contrib (~> 1.1.0)
+  rack-rewrite (~> 1.5.0)
   rack-ssl-enforcer (~> 0.2.8)
   therubyracer (~> 0.12.0)
   thin (~> 1.5.0)

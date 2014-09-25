@@ -4,6 +4,13 @@ require "rack/contrib/response_headers"
 require "rack/contrib/static_cache"
 require "rack/contrib/try_static"
 require 'rack/ssl-enforcer'
+require 'rack/rewrite'
+
+# Legacy
+use Rack::Rewrite do
+  r302      '/products',   '/'
+  r302      '/products.html',   '/'
+end
 
 # Force SSL
 use Rack::SslEnforcer, :only_environments => ['production']
