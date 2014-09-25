@@ -1,7 +1,7 @@
 <h1><%= article.title %></h1>
 <div class="meta-wrap">
     <span class="meta date"><%= article.date.strftime('%b %e %Y') %></span>
-    <a href="#" class="meta author"><%= article.data.author || "HashiCorp" %></a>
+    <span class="meta author"><%= article.data.author || "HashiCorp" %></span>
     <% article.tags.each_with_index do |tag, i| %>
         <a href="/blog/tags/<%= tag %>.html" class="meta meta-tag last"><%= tag %></a><span class="meta meta-tag last"><% if tag != article.tags.last %>,<% end %></span>
     <% end %>
