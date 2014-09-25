@@ -801,14 +801,10 @@ ol {
   line-height: 1.5em;
   margin-bottom: 20px;
 }
-p a,
-ul a,
-ol a {
+p a {
   color: #48b4fb;
 }
-p a:hover,
-ul a:hover,
-ol a:hover {
+p a:hover {
   text-decoration: underline;
 }
 a,
