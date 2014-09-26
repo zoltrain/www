@@ -2435,6 +2435,7 @@ div.align-center {
   margin-bottom: 0;
 }
 .blog #subheader #blogheader-meta .blog-categories li {
+  margin-top: 10px;
   display: inline-block;
   margin-right: 8px;
 }
