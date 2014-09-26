@@ -11,7 +11,7 @@ In this blog post, we'll show how Terraform can create a running instance of
 [Discourse](http://www.discourse.org/) on DigitalOcean in one command.
 
 Following the release of [Terraform 0.2](http://www.terraform.io),
-We wanted to publish the first of several examples of using
+we wanted to publish the first of several examples of using
 Terraform to automate the creation and management of infrastructure.
 
 Terraform is abstract, so it can be hard to grasp and understand it's

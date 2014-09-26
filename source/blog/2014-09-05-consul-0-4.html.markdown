@@ -34,7 +34,7 @@ easy to use ACL system for restricting access to the KV space. The
 approach taken by Consul is similar to IAM in AWS, and is very simple
 to use and integrate.
 
-Consul ACLs can be act in a blacklist mode, meaning all actions are permitted
+Consul ACLs can act in a blacklist mode, meaning all actions are permitted
 except those specifically denied, or in a whitelist mode, meaning all actions
 are denied except those specifically permitted.
 
@@ -71,13 +71,13 @@ and then update an external application when there is a change. While this has
 always been possible using the APIs, Consul 0.4 introduces ["watches"](http://www.consul.io/docs/agent/watches.html),
 which simplify this use case.
 
-A watch is a couples a "view" of data in Consul with a handler that is invoked
-on changes. Watches can be used to handles updates to KV data, services,
+A watch couples a "view" of data in Consul with a handler that is invoked
+on changes. Watches can be used to handle updates to KV data, services,
 nodes, health checks, user events and more. Watches can either be used by
 providing the proper configuration to an agent, or by using the new [`consul watch`
 command](http://www.consul.io/docs/commands/watch.html).
 
-As an example, to capture a list of nodes, the follow watch could be used:
+As an example, to capture a list of nodes, the following watch could be used:
 
     $ consul watch -type nodes /usr/local/bin/nodes-handler.sh
 

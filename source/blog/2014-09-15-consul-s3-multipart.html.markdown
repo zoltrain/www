@@ -125,7 +125,7 @@ further unlikely since we timeout an upload much earlier.
 ## The Devil is in the Details
 
 While we've covered the solution in broad strokes, we will cover the specifics
-of each operation subtlety is in the details. Logically, we start the workflow
+of each operation subtlety in the details. Logically, we start the workflow
 with the Put operation:
 
 1. If the file size is below a configurable `ChunkSize`, upload as a single part, done.
@@ -151,7 +151,7 @@ with the Put operation:
 8. If an error is encountered at any step, abort the upload, delete all the parts,
    and then delete the WAL.
 
-This is the pseudo code for our atomic upload. We make use of Write Ahead Logging
+This is the pseudo code for our atomic upload. We make use of Write-Ahead-Logging
 so that we can safely roll back any partial uploads, and we store our log on Consul
 to guard against a node failure. To handle node failure, all of our StorageLocker instances
 do a periodic scan for abandoned WAL entries and go to step 8, invoking
