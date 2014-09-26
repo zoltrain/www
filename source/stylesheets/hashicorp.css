@@ -852,7 +852,7 @@ code {
   font-family: 'Inconsolata', monaco, courier, monospace;
 }
 code {
-  font-size: inherit;
+  font-size: 15px;
 }
 pre {
   border: none;
