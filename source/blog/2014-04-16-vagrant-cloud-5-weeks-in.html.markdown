@@ -76,7 +76,7 @@ cloud customers is optional LDAP integration, allowing you to use your
 existing LDAP directory to authenticate users.
 
 If you're interested in learning more about Private Cloud, please
-email us at [cloud@hashicorp.com](mailto:cloud@hashicorp.com).
+email us at [sales+cloud@hashicorp.com](mailto:sales+cloud@hashicorp.com).
 
 ### What's next?
 
@@ -93,4 +93,4 @@ suggestions of how trustable a box is. Download numbers, favoriting,
 user profiles and more supports the "trustability" of a box.
 
 As always, please email us directly with feedback or questions
-at [cloudbeta@hashicorp.com](mailto:cloudbeta@hashicorp.com).
+at [cloudbeta@hashicorp.com](mailto:support+cloud@hashicorp.com).

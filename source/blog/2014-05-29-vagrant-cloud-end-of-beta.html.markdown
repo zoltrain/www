@@ -89,7 +89,7 @@ Data will not be deleted.
 They'll be notices in Vagrant Cloud, as well as an email notification sent
 alerting users to the transition.
 
-If anything is unclear please email us at [cloud@hashicorp.com](mailto:cloud@hashicorp.com)
+If anything is unclear please email us at [sales+cloud@hashicorp.com](mailto:sales+cloud@hashicorp.com).
 
 ### Private Cloud
 
@@ -106,4 +106,4 @@ LDAP integration, allowing you to use your existing LDAP directory to
 authenticate users. Box hosting is done through any S3 compatible service.
 
 If you're interested in learning more about Private Cloud, please
-email us at [cloud@hashicorp.com](mailto:cloud@hashicorp.com).
+email us at [sales+cloud@hashicorp.com](mailto:sales+cloud@hashicorp.com).
