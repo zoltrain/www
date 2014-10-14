@@ -37,7 +37,7 @@ over the major features later in ths blog post.
 
 Modules are a way in Terraform to organize a set of Terraform configurations
 into a reusable, distributable package. In the demo video above, the
-[Consul Terraform module](#)
+[Consul Terraform module](https://github.com/hashicorp/consul/tree/master/terraform/aws)
 is used to quickly initialize and start an infrastruture.
 
 Using modules is simple and intuitive:
