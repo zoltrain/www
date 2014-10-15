@@ -27,7 +27,7 @@ READMORE
 ## Demo Videos
 
 The videos below showcase a lot of the features in Terraform 0.3. We go
-over the major features later in ths blog post.
+over the major features later in the blog post.
 
 <iframe src="//player.vimeo.com/video/108755280" width="683" height="384" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
