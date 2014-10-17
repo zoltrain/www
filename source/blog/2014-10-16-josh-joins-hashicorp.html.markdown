@@ -18,7 +18,7 @@ as well as working on our upcoming commercial systems.
 READMORE
 
 Prior to HashiCorp. Josh worked at DigitalOcean and Etsy. At DigitalOcean,
-Josh used Packer to build their automated pipelineto build the base droplet
+Josh used Packer to create their automated pipeline to build the base droplet
 images. For his side projects, Josh used our tooling to scale and automate
 infrastructure.
 
