@@ -7,8 +7,8 @@ author: Seth Vargo
 tags: consul
 ---
 
-Today we are releasing [Consul Template][], a standalone application application
-that is packed full of amazing new features.
+Today we are releasing [Consul Template][], a standalone application that is
+packed full of amazing new features.
 
 Consul Template queries a [Consul][] instance and updates any number of
 specified templates on the filesystem. As an added bonus, Consul Template can
