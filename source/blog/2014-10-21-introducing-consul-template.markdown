@@ -47,7 +47,7 @@ configuration usually looks something like:
 
   Here is a similar example for an Nginx configuration:
 
-      upstream frontend {{{range service "app.frontend"}}
+      upstream frontend {{range service "app.frontend"}}
         server {{.Address}};{{end}}
       }
 
